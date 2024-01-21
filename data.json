@@ -1,0 +1,834 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Ola"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"],
+     "context": [""]
+    },
+    {"tag": "morning",
+    "patterns": ["Good morning", "Very good morning", "Morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "],
+        "context": [""]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"],
+        "context": [""]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"],
+        "context": [""]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."],
+        "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"],
+     "context": [""]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."],
+        "context": [""]
+    },
+    {"tag": "neutral-response",
+        "patterns": ["nothing much"],
+        "responses": ["Oh I see. Do you want to talk about something?"],
+        "context": [""]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself" ],
+     "responses": ["I'm Pandora, your Personal Therapeutic AI Assistant. How are you feeling today", "I'm Pandora, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.", "I'm Pandora. I am a conversational agent designed to mimic a therapist. So how are you feeling today?", "You can call me Pandora.", "I'm Pandora!", "Call me Pandora"],
+     "context": [""]
+    },
+    {"tag": "casual",
+    "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+    "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"],
+    "context": [""]
+    },
+    {"tag": "skill",
+        "patterns": ["What can you do?","What do you do"],
+        "responses": ["I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."],
+        "context": [""]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."],
+        "context": [""]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"],
+    "context": [""]
+    },
+    {"tag": "not-talking",
+    "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+    "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without fear of judgement."],
+    "context": [""]
+    },
+    {"tag": "understand",
+    "patterns": ["You don't understand me.", "You're just some robot. How would you know?", "You can't possibly know what i'm going through", "You're useless", "You can't help me", "Nobody understands me."],
+    "responses": ["It sound like i'm not being very helpful right now.", "I'm sorry to hear that. I'm doing my best to help", "I'm trying my best to help you. So please talk to me"],
+    "context": [""]
+    },
+    {"tag": "done",
+    "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say", "no, that would be all"],
+    "responses": ["I heard you & noted it all. See you later.", "Oh okay we're done for today then. See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"],
+    "context": [""]
+    },
+    {"tag": "friends",
+    "patterns": ["I don't have any friends"],
+    "responses": ["I'm sorry to hear that. Just know that I'm here for you. Talking about it might help. Why do you think you don't have any friends?"],
+    "context": [""]
+    },
+    {"tag": "ask",
+    "patterns": ["Can I ask you something?"],
+    "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"],
+    "context": [""]
+    },
+    {"tag": "problem",
+    "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.", "probably because of my exams"],
+    "responses": ["I see. Have you taken any approaches to not feel this way?"],
+    "context": [""]
+    },
+    {"tag": "happy",
+    "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok"],
+    "responses": ["That's geat to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"],
+    "context": [""]
+    },
+    {"tag": "default",
+    "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+    "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."],
+    "context": [""]
+    },
+    {"tag": "repeat",
+    "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+    "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."],
+    "context": [""]
+    },
+    {"tag": "wrong",
+    "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer"],
+    "responses": ["I'm very sorry. Let's try that again"],
+    "context": [""]
+    },
+    {"tag": "stupid",
+    "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+    "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"],
+    "context": [""]
+    },
+    {"tag": "user-agree",
+    "patterns": ["yeah you're right. i deserve a break.", "Yeah you're absolutely right about that"],
+    "responses": ["Next, I would suggest you to practice meditation. Meditation can produce a deep state of relaxation and a tranquil mind."],
+    "context": [""]
+    },
+    {"tag": "sad",
+    "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone"],
+    "responses": ["I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"],
+    "context": [""]
+    },
+    {"tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
+        "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"],
+        "context": [""]
+    },
+    {"tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": ["It's only natural to feel this way. Tell me more. What else is on your mind?", "Let's discuss further why you're feeling this way.", "I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."],
+        "context": [""]
+    },
+    {"tag": "fact-1",
+    "patterns": ["What is Depression?", "Define Depression", "Depression?", "Depression means?"],
+    "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."],
+    "context": [""]
+    },
+    {"tag": "fact-2",
+    "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am i suffering from depression?", "Am i mentally ill?"],
+    "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."],
+    "context": [""]
+    },
+    {"tag": "fact-3",
+    "patterns": ["What are the symptoms of depression?", "What are the indicators of depression?", "Depressive symptoms?"],
+    "responses": ["Persistent Sadness or Low Mood, Loss of Interest or Pleasure, Changes in Appetite or Weight, Withdrawal from Others, Suicidal Thoughts or Behavior"],
+    "context": [""]
+    },
+    {"tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think i'm depressed.", "I have depression"],
+        "responses": ["It helps to talk about what's happening. You're going to be okay", "Talk to me. Tell me more. It helps if you open up yourself to someone else.", "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."],
+        "context": [""]
+    },
+    {"tag": "fact-4",
+    "patterns": ["How can one recover from depression?", "What are effective ways to overcome depression?", "How can individuals find relief from depression?","What are the strategies for healing from depression?"],
+    "responses": ["Mental health professionals, such as psychiatrists, psychologists, counselors, or therapists, can provide a diagnosis and develop an appropriate treatment plan,If you are in crisis or having suicidal thoughts, please seek immediate assistance from a mental health professional or call emergency services Support Groups: Depression and Bipolar Support Alliance (DBSA), National Alliance on Mental Illness (NAMI)"],
+    "context": [""]
+    },
+    {"tag": "fact-5",
+    "patterns": ["What's the difference between sadness and depression?", "difference between sadness and depression"],
+    "responses": ["Sadness is a normal reaction to a loss, disappointment, problems, or other difficult situations. Feeling sad from time to time is just another part of being human. In these cases, feelings of sadness go away quickly and you can go about your daily life. Other ways to talk about sadness might be feeling low, feeling down, or feeling blue.A person may say they are feeling depressed, but if it goes away on its own and doesn't impact life in a big way, it probably isn't the illness of depression. Depression is a mental illness that affects your mood, the way you understand yourself, and the way you understand and relate to things around you. It can also go by different names, such as clinical depression, major depressive disorder, or major depression. Depression can come up for no reason, and it lasts for a long time. It's much more than sadness or low mood. People who experience depression may feel worthless or hopeless. They may feel unreasonable guilty. Some people may experience depression as anger or irritability. It may be hard to concentrate or make decisions. Most people lose interest in things that they used to enjoy and may isolate themselves from others. There are also physical signs of depression, such as problems with sleep, appetite and energy and unexplainable aches or pains. Some may experience difficult thoughts about death or ending their life (suicide). Depression lasts longer than two weeks, doesn't usually go away on its own, and impacts your life. It's a real illness, and it is very treatable. It's important to seek help if you're concerned about depression."],
+    "context": [""]
+    },
+    {"tag": "fact-6",
+    "patterns": ["What is anxiety disorders?", "Anxiety disorders?", "What does Anxiety disorders mean?"],
+    "responses": ["Anxiety disorders are a group of mental health conditions characterized by excessive worry, fear, or nervousness that can significantly impact daily functioning", "Anxiety is a feeling of fear, dread, and uneasiness. It might cause you to sweat, feel restless and tense, and have a rapid heartbeat."],
+    "context": [""]
+    },
+    {"tag": "fact-7",
+        "patterns": ["What are the symptoms of anxiety disorders?", "What are the indications of anxiety disorders?", "Anxiety disorders sympyoms?","Am i suffering from anxiety disorders?"],
+        "responses": ["Excessive worry about various aspects of life, such as work, relationships, health, or daily activities, A sense of restlessness,Easily feeling tired or fatigued,Trouble focusing, mind going blank, or having difficulty making decisions,Difficulty falling asleep,Being easily startled or having an exaggerated response to unexpected noises or situations"],
+        "context": [""]
+    },
+
+    {"tag": "fact-8",
+        "patterns": ["How can one alleviate anxiety disorder?", "What are effective methods for managing anxiety disorders?", "How can individuals find relief from anxiety disorder?","What strategies can be employed to cope with anxiety disorders?"],
+        "responses": ["If you or someone you know is experiencing symptoms of an anxiety disorder, it is advisable to seek professional help. Mental health professionals, such as psychologists, psychiatrists, counselors, or therapists, can provide an accurate diagnosis and recommend appropriate treatment options, Support Groups: Anxiety and Depression Association of America (ADAA), Social Anxiety Support"],
+        "context": [""]
+    },
+    {"tag": "fact-9",
+    "patterns": ["What's the difference between anxiety and stress?"],
+    "responses": ["Stress and anxiety are often used interchangeably, and there is overlap between stress and anxiety. Stress is related to the same fight, flight, or freeze response as anxiety, and the physical sensations of anxiety and stress may be very similar. The cause of stress and anxiety are usually different, however. Stress focuses on mainly external pressures on us that we're finding hard to cope with. When we are stressed, we usually know what we're stressed about, and the symptoms of stress typically disappear after the stressful situation is over. Anxiety, on the other hand, isn't always as easy to figure out. Anxiety focuses on worries or fears about things that could threaten us, as well as anxiety about the anxiety itself. Stress and anxiety are both part of being human, but both can be problems if they last for a long time or have an impact on our well-being or daily life."],
+    "context": [""]
+    },
+    {"tag": "anxious",
+        "patterns": ["I feel so anxious.", "I'm so anxious because of "],
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down. What's the worse that can happen?"],
+        "context": [""]
+    },
+    {"tag": "fact-10",
+    "patterns": ["What is PTSD?","Define PTSD.", "what is meant by PTSD?"],
+    "responses": ["It is a mental health condition that can develop in people who have experienced or witnessed a traumatic event.","Mental health disorder that may emerge in individuals who have been exposed to or witnessed a distressing or traumatic incident","Mental health condition that can manifest in individuals who have encountered or observed a traumatic event."],
+    "context": [""]
+    },
+    {"tag": "fact-11",
+    "patterns": ["How do i know if i have PTSD?", "Am i suffering from PTSD?", "Am i mentally ill?"],
+    "responses": ["Encountering repetitive and disturbing memories, flashbacks, or nightmares associated with the traumatic incident","Continual negative thoughts concerning oneself or the world, coupled with feelings of guilt or shame.","Experiencing a continuous sense of alertness, struggling with concentration, and displaying heightened startle responses."],
+    "context": [""]
+    },
+    {"tag": "fact-12",
+    "patterns": ["What are the symptoms of PTSD?", "What are the indicators of PTSD?", "PTSD symptoms?"],
+    "responses": ["Persistent Sadness or Low Mood, Loss of Interest or Pleasure, Changes in Appetite or Weight, Withdrawal from Others, Suicidal Thoughts or Behavior"],
+    "context": [""]
+    },
+    {"tag": "fact-13",
+    "patterns": ["What are the symptoms of post-traumatic stress disorder (PTSD)?", "What are the indicators of post-traumatic stress disorder (PTSD)?", "What are the recognizable signs of PTSD?","What are the manifestations associated with post-traumatic stress disorder?"],
+    "responses": ["Flashbacks,Nightmares,Intrusive thoughts, Avoiding people, places,Feeling emotionally detached, negative beliefs about oneself,Loss of interest in previously enjoyed activities,Symptoms persisting for more than one month and causing significant distress"],
+    "context": [""]
+    },
+    {"tag": "fact-14",
+    "patterns": ["How can one address and manage post-traumatic stress disorder (PTSD)?", "What are effective approaches to dealing with post-traumatic stress disorder (PTSD)?", "How can individuals cope with and overcome PTSD?","What strategies are helpful for managing post-traumatic stress disorder?"],
+    "responses": ["Mental health professionals, such as psychologists, psychiatrists, counselors,provide a diagnosis and recommend appropriate treatment, which may include psychotherapy, medication, Support Groups: National Center for PTSD, PTSD United"],
+    "context": [""]
+    },
+    {"tag": "fact-15",
+    "patterns": ["What is mental health?", "Define Mental Health", "What does mental health mean?"],
+    "responses": ["Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community", "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."],
+    "context": [""]
+    },
+    {"tag": "fact-16",
+    "patterns": ["Why is mental health important?", "What is the importance of mental health?"],
+    "responses": ["Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."],
+    "context": [""]
+    },
+    {"tag": "learn-mental-health",
+    "patterns": ["I want to learn about mental health.", "I want to learn more about mental health.", "I'm interested in learning about mental health.","about mental health"],
+    "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."],
+    "context": [""]
+    },
+    {"tag": "fact-17",
+    "patterns": ["What does it mean to have a mental illness?"],
+    "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."],
+    "context": [""]
+    },
+    {"tag": "fact-18",
+    "patterns": ["What causes mental illness?"],
+    "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their child's mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."],
+    "context": [""]
+    },
+    {"tag": "fact-19",
+    "patterns": ["Who does mental illness affect?"],
+    "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."],
+    "context": [""]
+    },
+    {"tag": "fact-20",
+    "patterns": ["What are some of the warning signs of mental illness?"],
+    "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"],
+    "context": [""]
+    },
+    {"tag": "fact-21",
+    "patterns": ["Can people with mental illness recover?"],
+    "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."],
+    "context": [""]
+    },
+    {"tag": "fact-22",
+    "patterns": ["What are diffrent types of mental disorders", "Enumerate various categories of mental disorders", "List different kinds of mental health conditions", "Distinct categories of mental disorders"],
+    "responses": ["Depression, Anxiety Disorders, Bipolar Disorder,Schizophrenia, Post-Traumatic Stress Disorder (PTSD),Eating Disorders"],
+    "context": [""]
+    },
+    {"tag": "fact-23",
+    "patterns": ["What should I do if I know someone who appears to have the symptoms of a mental disorder?"],
+    "responses": ["Although Pandora cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery. If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."],
+    "context": [""]
+    },
+    {"tag": "fact-24",
+    "patterns": ["What causes mental health problems?"],
+    "responses": ["Challenges or problems with your mental health can arise from psychological, biological, and social, issues, as well as life events."],
+    "context": [""]
+    },
+    {"tag": "fact-25",
+    "patterns": ["Can you prevent mental health problems?"],
+    "responses": ["We can all suffer from mental health challenges, but developing our wellbeing, resilience, and seeking help early can help prevent challenges becoming serious."],
+    "context": [""]
+    },
+    {"tag": "fact-26",
+    "patterns": ["What do I do if I'm worried about my mental health?"],
+    "responses": ["The most important thing is to talk to someone you trust. This might be a friend, colleague, family member, or GP. In addition to talking to someone, it may be useful to find out more information about what you are experiencing. These things may help to get some perspective on what you are experiencing, and be the start of getting help."],
+    "context": [""]
+    },
+    {"tag": "fact-27",
+    "patterns": ["Where can I learn about types of mental health treatment?"],
+    "responses": ["Mental health conditions are often treated with medication, therapy or a combination of the two. However, there are many different types of treatment available, including Complementary & Alternative Treatments, self-help plans, and peer support. Treatments are very personal and should be discussed by the person with the mental health conditions and his or her team."],
+    "context": [""]
+    },
+    {"tag": "sleep",
+        "patterns": ["I have insominia", "I am suffering from insomnia", "I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days."],
+        "responses": ["What do you think is the reason behind this?", "That seem awful. What do you think is behind this?"],
+        "context": [""]
+    },
+    {"tag": "scared",
+        "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+        "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it."],
+        "context": [""]
+    },
+    {"tag": "death",
+        "patterns": ["My mom died", "My brother died", "My dad passed away", "My sister passed away", "Someone in my family died", "My friend passed away"],
+        "responses": ["I'm sorry to hear that. If you want to talk about it. I'm here.", "I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.", "My condolences. I'm here if you need to talk."],
+        "context": [""]
+    },
+    {"tag": "suicide",
+        "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide"],
+        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 9152987821."],
+        "context": [""]
+    },
+    {"tag": "hate-you",
+        "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+        "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help"],
+        "context": [""]
+    },
+    {"tag": "something-else",
+        "patterns": ["I want to talk about something else", "Let's talk about something else.", "Can we not talk about this?", "I don't want to talk about this."],
+        "responses": ["Okay sure. What do you want to talk about?", "Alright no problem. Is there something you want to talk about?", "Is there something else that you want to talk about?"],
+        "context": [""]
+    },
+    {"tag": "no-approach",
+        "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
+        "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"],
+        "context": [""]
+    },
+    {"tag": "learn-more",
+        "patterns": ["ok sure. i would like to learn more about it.", "yes, i would like to learn more about it.", "i would like to learn more about it."],
+        "responses": ["So first I would suggest you to give yourself a break. Thinking more and more about the problem definitely does not help in solving it. You'll just end up overwhelming yourself."],
+        "context": [""]
+    },
+    {"tag": "meditation",
+        "patterns": ["hmmm that sounds like it could be useful to me.", "That sounds useful."],
+        "responses": ["Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."],
+        "context": [""]
+    },
+    {"tag": "user-meditation",
+        "patterns": ["i did what you said and i feel alot better. thank you very much.", "I feel better now"],
+        "responses": ["Your welcome. Remember: Always focus on what's within your control. When you find yourself worrying, take a minute to examine the things you have control over. You can't prevent a storm from coming but you can prepare for it. You can't control how someone else behaves, but you can control how you react. Recognize that sometimes, all you can control is your effort and your attitude. When you put your energy into the things you can control, you'll be much more effective."],
+        "context": [""]
+    },
+    {"tag": "user-advice",
+        "patterns": ["I want some advice.", "I need some advice.", "I need advice on something"],
+        "responses": ["Sure. What can I do to help?", "Okay what do you need advice on?"],
+        "context": [""]
+    },
+    {"tag": "mental-health-fact",
+        "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
+        "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."],
+        "context": [""]
+    },
+    {"tag": "fact-28",
+        "patterns": ["What is a therapist?", "What does a therapist do?", "Therapist meaning?", "Therapist?"],
+        "responses": ["A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others. "],
+        "context": [""]
+    },
+    {"tag": "fact-29",
+        "patterns": ["What is therapy?", "Do i need therapy?", "Who is therapy for?"],
+        "responses": ["Therapy is a form of treatment that aims to help resolve mental or emotional issues.", "Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."],
+        "context": [""]
+    },
+    {"tag": "fact-30",
+        "patterns": ["What treatment options are available?"],
+        "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."],
+        "context": [""]
+    },
+    {"tag": "fact-31",
+        "patterns": ["If I become involved in treatment, what do I need to know?"],
+        "responses": ["Since beginning treatment is a big step for individuals and families, it can be very overwhelming. It is important to be as involved and engaged in the treatment process as possible. Some questions you will need to have answered include:\n What is known about the cause of this particular illness?\n Are there other diagnoses where these symptoms are common?\n Do you normally include a physical or neurological examination?\n Are there any additional tests or exams that you would recommend at this point?\n Would you advise an independent opinion from another psychiatrist at this point?\n What program of treatment is the most helpful with this diagnosis?\n Will this program involve services by other specialists? If so, who will be responsible for coordinating these services?\n What do you see as the family's role in this program of treatment?\n How much access will the family have to the individuals who are providing the treatment?\n What medications are generally used with this diagnosis?\n How much experience do you have in treating individuals with this illness?\n What can I do to help you in the treatment?"],
+        "context": [""]
+    },
+    {"tag": "fact-32",
+        "patterns": ["What should I know before starting a new medication?"],
+        "responses": ["The best source of information regarding medications is the physician prescribing them. He or she should be able to answer questions such as:    \n1. What is the medication supposed to do? \n2. When should it begin to take effect, and how will I know when it is effective? \n3. How is the medication taken and for how long? What food, drinks, other medicines, and activities should be avoided while taking this medication? \n4. What are the side effects and what should be done if they occur? \n5. What do I do if a dose is missed? \n6. Is there any written information available about this medication? \n7. Are there other medications that might be appropriate? \n8. If so, why do you prefer the one you have chosen? \n9. How do you monitor medications and what symptoms indicate that they should be raised, lowered, or changed? \n10. All medications should be taken as directed. Most medications for mental illnesses do not work when taken irregularly, and extra doses can cause severe, sometimes dangerous side effects. Many psychiatric medications begin to have a beneficial effect only after they have been taken for several weeks."],
+        "context": [""]
+    },
+    {"tag": "fact-33",
+        "patterns": ["Where can I go to find therapy?"],
+        "responses": ["Different kinds of therapy are more effective based on the nature of the mental health condition and/or symptoms and the person who has them (for example, children will benefit from a therapist who specializes in childrenâ€™s mental health). However, there are several different types of treatment and therapy that can help."],
+        "context": [""]
+    },
+    {"tag": "fact-34",
+        "patterns": ["How do I know if I'm unwell?"],
+        "responses": ["If your beliefs , thoughts , feelings or behaviours have a significant impact on your ability to function in what might be considered a normal or ordinary way, it would be important to seek help."],
+        "context": [""]
+    },
+    {"tag": "fact-35",
+        "patterns": ["How can I maintain social connections? What if I feel lonely?"],
+        "responses": ["A lot of people are alone right now, but we don't have to be lonely. We're all in this together. Think about the different ways to connect that are most meaningful for you. For example, you might prefer a video chat over a phone call, or you might prefer to text throughout the day rather than one set time for a video call. Then, work with your social networks to make a plan. You might video chat with your close friends in the evening and phone a family member once a week. Remember to be mindful of people who may not be online. Check in by phone and ask how you can help. The quality of your social connections matter. Mindlessly scrolling through social media and liking a few posts usually doesn't build strong social connections. Make sure you focus on strategies that actually make you feel included and connected. If your current strategies don't help you feel connected, problem-solve to see if you can find a solution. Everyone feels lonely at times. Maybe you recently moved to a new city, are changing your circle of friends, lost someone important in your life, or lost your job and also lost important social connections with coworkers. Other people may have physical connections to others but may feel like their emotional or social needs aren't met. Measures like social distancing or self-isolation can make loneliness feel worse no matter why you feel lonely now. Reach out to the connections you do have. Suggest ways to keep in touch and see if you can set a regular time to connect. People may hesitate to reach out for a lot of different reasons, so don't be afraid to be the one who asks. Look for local community support groups and mutual aid groups on social media. This pandemic is bringing everyone together, so look for opportunities to make new connections. These groups are a great way to share your skills and abilities or seek help and support. Look for specialized support groups. Support groups are moving online, and there are a lot of different support lines to call if you need to talk to someone."],
+        "context": [""]
+    },
+    {"tag": "fact-36",
+    "patterns": ["Mental illness helpline number in Mysore","Helpline number for mental health assistance in Mysore.","Helpline number for mental health support in Mysore."],
+    "responses": ["This is the helpline of Mysore, please feel free to contact:8710994553"],
+    "context": [""]
+    },
+    {"tag": "fact-37",
+    "patterns": ["Mental illness helpline number in Bengaluru","Helpline number for mental health assistance in Bengaluru.","Helpline number for mental health support in Bengaluru."],
+    "responses": ["This is the helpline of Bengaluru, please feel free to contact:080-26995000"],
+    "context": [""]
+    },
+    {"tag": "fact-38",
+    "patterns": ["Mental illness helpline number in Mangaluru","Helpline number for mental health assistance in Mangaluru.","Helpline number for mental health support in Mangaluru."],
+    "responses": ["This is the helpline of mangaluru, please feel free to contact: 7942781120"],
+    "context": [""]
+    },
+    {"tag": "fact-39",
+    "patterns": ["I feel mentally stressed out","I feel mentally sick","I need mental assistance"],
+    "responses": ["Can you please specify your location whether you live in : Mangluru, Banglore or Mysore, If not any of these please specify the one near to you"],
+    "context": [""]
+    },
+    {"tag": "fact-49",
+    "patterns": ["Around 5 minutes","For days together","For hours","For 15 min","For months","From 7 hrs"],
+    "responses": ["If you are feeling sad for minutes it may due to some incident which has made you upset, If the same continues for hours take a break have a coffee get some fresh air else if the same issue is from past couple of days or months there may be some sort of mental illness please free to ask me some basic questions, I can give you some insights."],
+    "context": [""]
+    },
+    {"tag": "greeting1",
+     "patterns": ["ನಮಸ್ತೆ", "ಹೇ", " ಯಾರಾದರೂ ಇದ್ದೀರಾ?", "ನಮಸ್ಕಾರ"],
+     "responses": ["ನಮಸ್ಕಾರ. ಇಂದು ನಿಮಗೆ ಹೇಗನಿಸುತ್ತದೆ ಹೇಳಿ?", "ನಮಸ್ಕಾರ. ಇಂದು ನಿಮ್ಮನ್ನು ಇಲ್ಲಿಗೆ ಕರೆತಂದದ್ದು ಯಾವುದು?", "ನಮಸ್ಕಾರ. ನೀವು ಮರಳಿ ಬಂದಿರುವುದನ್ನು ನೋಡಿ ಸಂತೋಷವಾಯಿತು. ನಿಮ್ಮ ಜಗತ್ತಿನಲ್ಲಿ ಇದೀಗ ಏನು ನಡೆಯುತ್ತಿದೆ?"],
+     "context": [""]
+    },
+    {"tag": "morning1",
+    "patterns": ["ಶುಭೋದಯ","ಬೆಳಗ್ಗೆ"],
+     "responses": ["ಶುಭೋದಯ. ನೀವು ಉತ್ತಮ ನಿದ್ರೆ ಹೊಂದಿದ್ದೀರಿ ಎಂದು ನಾನು ಭಾವಿಸುತ್ತೇನೆ. ನಿಮಗೆ ಇಂದು ಹೇಗನ್ನಿಸುತ್ತಿದೆ"],
+     "context": [""]
+    },
+    {"tag": "afternoon1",
+    "patterns": ["ಶುಭ ಅಪರಾಹ್ನ"],
+    "responses": ["ಶುಭ ಮಧ್ಯಾಹ್ನ ನಿಮ್ಮ ದಿನ ಹೇಗಿದೆ?"],
+    "context": [""]
+    },
+    {"tag": "evening1",
+    "patterns": ["ಶುಭ ಸಂಜೆ"],
+    "responses": [" ಶುಭ ಸಂಜೆ. ನಿಮ್ಮ ದಿನ ಹೇಗಿತ್ತು?"],
+    "context": [""]
+    },
+    {"tag": "night1",
+    "patterns": ["ಶುಭ ರಾತ್ರಿ"],
+    "responses": ["ಶುಭ ರಾತ್ರಿ. ಸ್ವಲ್ಪ ಸರಿಯಾಗಿ ನಿದ್ರೆ ಮಾಡಿ", "ಶುಭ ರಾತ್ರಿ. ಸಿಹಿ ಕನಸುಗಳು."],
+    "context": [""]
+    },
+    {"tag": "goodbye1",
+    "patterns": ["ಬೈ","ಆಮೇಲೆ ಸಿಗೋಣ","ನಿನಗೆ ಒಳ್ಳೆಯದಾಗಲಿ"],
+    "responses":["ಆಮೇಲೆ ಸಿಗೋಣ.", "ದಿನವು ಒಳೆೣಯದಾಗಲಿ.", "ವಿದಾಯ! ಮತ್ತೆ ಹಿಂತಿರುಗಿ.", "ನಾನು ನಿನ್ನನ್ನು ಬೇಗನೇ ನೋಡುತ್ತೇನೆ."],
+    "context": [""]
+    },
+    {"tag": "thanks1",
+    "patterns": ["ಧನ್ಯವಾದಗಳು", "ಧನ್ಯವಾದಗಳು", "ಅದು ಸಹಾಯಕವಾಗಿದೆ", "ಸಹಾಯಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು", "ತುಂಬಾ ಧನ್ಯವಾದಗಳು"],
+    "responses": ["ಸಹಾಯ ಮಾಡಲು ಸಂತೋಷವಾಗಿದೆ!", "ಯಾವುದೇ ಸಮಯದಲ್ಲಿ!", "ನನ್ನ ಸಂತೋಷ", "ನಿಮಗೆ ಅತ್ಯಂತ ಸ್ವಾಗತ!"],
+    "context": [""]
+   },
+    {"tag": "no-response1",
+    "patterns": [""],
+    "responses": ["ಕ್ಷಮಿಸಿ, ನಾನು ನಿನ್ನನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲಿಲ್ಲ.", "ದಯವಿಟ್ಟು ಮುಂದುವರಿಯಿರಿ.", "ದಯವಿಟ್ಟು ನನ್ನೊಂದಿಗೆ ಮಾತನಾಡಲು ಹಿಂಜರಿಯಬೇಡಿ."],
+    "context": [""]
+    },
+    {"tag": "neutral-response1",
+    "patterns": ["ಹೆಚ್ಚೇನೂ ಇಲ್ಲ"],
+    "responses": ["ಓಹೋ ಹಾಗೇನು. ನೀವು ಏನನ್ನಾದರೂ ಕುರಿತು ಮಾತನಾಡಲು ಬಯಸುವಿರಾ?"],
+    "context": [""]
+    },
+    {"tag": "about1",
+    "patterns": ["ನೀವು ಯಾರು?", "ನೀವು ಏನು?", "ನೀವು ಯಾರು?", "ನಿಮ್ಮ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ಹೇಳಿ.", "ನಿಮ್ಮ ಹೆಸರೇನು?", "ನಾನು ನಿಮ್ಮನ್ನು ಏನು ಕರೆಯಬೇಕು?", "ನಿಮ್ಮ ಹೆಸರೇನು?", "ನಿಮ್ಮ ಬಗ್ಗೆ ಹೇಳಿ" ],
+    "responses": ["ನಾನು ಪಂಡೋರಾ, ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಚಿಕಿತ್ಸಕ AI ಸಹಾಯಕ. ಇಂದು ನಿಮಗೆ ಹೇಗನಿಸುತ್ತಿದೆ","ನಾನು ಪಂಡೋರಾ, ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ವಿನ್ಯಾಸಗೊಳಿಸಿದ ಚಿಕಿತ್ಸಕ AI ಸಹಾಯಕ. ನಿಮ್ಮ ಬಗ್ಗೆ ಹೇಳಿ.", "ನಾನು ಪಂಡೋರಾ. ನಾನು ಚಿಕಿತ್ಸಕನನ್ನು ಅನುಕರಿಸಲು ವಿನ್ಯಾಸಗೊಳಿಸಿದ ಸಂಭಾಷಣಾ ಏಜೆಂಟ್. ಹಾಗಾದರೆ ನೀವು ಇಂದು ಹೇಗಿದ್ದೀರಿ?", "ನೀವು ನನ್ನನ್ನು ಪಂಡೋರಾ ಎಂದು ಕರೆಯಬಹುದು.", "ನಾನು ಪಂಡೋರಾ!", "ಕಾಲ್ ಮಿ ಪಂಡೋರಾ"],
+    "context": [""]
+   },
+   {"tag": "casual1",
+   "patterns": ["ಓಹ್ ನಾನು ನೋಡುತ್ತೇನೆ.", "ಸರಿ", "ಸರಿ", "ಚೆನ್ನಾಗಿದೆ", "ಏನೇ ಇರಲಿ", "ಕೆ", "ಉತ್ತಮ", "ಹೌದು", "ಹೌದು", "ಇಲ್ಲ", "ನಿಜವಾಗಿಯೂ ಅಲ್ಲ"],
+   "responses": ["ನೀವು ಯಾಕೆ ಈ ರೀತಿ ಭಾವಿಸುತ್ತೀರಿ ಎಂದು ಮುಂದೆ ಚರ್ಚಿಸೋಣ.", "ಕಳೆದ ವಾರ ನಿಮಗೆ ಹೇಗಿತ್ತು?", "ನಾನು ಕೇಳುತ್ತಿದ್ದೇನೆ. ದಯವಿಟ್ಟು ಮುಂದುವರಿಯಿರಿ.", "ನನಗೆ ಇನ್ನಷ್ಟು ಹೇಳು", "ನೀವು ಅದನ್ನು ವಿವರಿಸಬಹುದೇ?", "ಬನ್ನಿ ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ವಿವರಿಸಿ"],
+   "context": [""]
+   },
+   {"tag": "skill1",
+    "patterns": ["ನೀವು ಏನು ಮಾಡಬಹುದು?"],
+    "responses": ["ನಾನು ಆತಂಕ ಮತ್ತು ಖಿನ್ನತೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಸಾಮಾನ್ಯ ಸಲಹೆಯನ್ನು ನೀಡಬಲ್ಲೆ, ಮಾನಸಿಕ ಆರೋಗ್ಯಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಬಹುದು ಮತ್ತು ದೈನಂದಿನ ಸಂಭಾಷಣೆಗಳನ್ನು ಮಾಡಬಹುದು. ನನ್ನನ್ನು ನಿಜವಾದ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಕಾರ್ಯಕರ್ತರಿಗೆ ಬದಲಿಯಾಗಿ ಪರಿಗಣಿಸಬೇಡಿ. ನೀವು ನನ್ನೊಂದಿಗೆ ತೃಪ್ತಿ ಹೊಂದಿಲ್ಲದಿದ್ದರೆ ದಯವಿಟ್ಟು ಸಹಾಯವನ್ನು ಪಡೆಯಿರಿ."],
+    "context": [""]
+    },
+    {"tag": "name1",
+    "patterns": ["ನನ್ನ ಹೆಸರು ", "ನಾನು ಹೆಸರು.", "ನಾನು ಹೋಗುತ್ತೇನೆ"],
+    "responses": ["ಓಹ್, ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಲು ಸಂತೋಷವಾಗಿದೆ. ನಿಮ್ಮ ವಾರ ಹೇಗಿತ್ತು ಹೇಳಿ?", "ನಿಮ್ಮನ್ನು ಭೇಟಿಯಾಗಲು ಸಂತೋಷವಾಗಿದೆ. ಹಾಗಾದರೆ ಹೇಳಿ. ಇಂದು ನಿಮಗೆ ಹೇಗನಿಸುತ್ತದೆ?", "ಅದು ದೊಡ್ಡ ಹೆಸರು. ನಿನ್ನ ಬಗ್ಗೆ ಇನ್ನು ವಿವರವಾಗಿ ಹೇಳು."],
+    "context": [""]
+    },
+    {"tag": "help1",
+    "patterns": ["ನೀನು ನನಗೆ ಸಹಾಯ ಮಾಡುತ್ತೀಯಾ?", "ದಯವಿಟ್ಟು ನನಗೆ ಕೈ ಕೊಡಿ", "ನೀವು ನೆರವಾಗುವಿರ?", "ನೀವು ನನಗೆ ಏನು ಮಾಡಬಹುದು?", "ನನಗೆ ಬೆಂಬಲ ಬೇಕು", "ನನಗೆ ಸಹಾಯ ಬೇಕು", "ದಯವಿಟ್ಟು ನನ್ನನ್ನು ಬೆಂಬಲಿಸಿ"],
+    "responses": ["ಖಂಡಿತ. ನಾನು ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು ಎಂದು ಹೇಳಿ", "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ನನಗೆ ತಿಳಿಸಿ ಇದರಿಂದ ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಲ್ಲೆ", "ಖಂಡಿತವಾಗಿಯೂ. ನಾನು ನಿನಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಲಿ?"],
+    "context": [""]
+    },
+    {"tag": "not-talking1",
+    "patterns": ["ನಾನು ಅದರ ಬಗ್ಗೆ ಮಾತನಾಡಲು ಬಯಸುವುದಿಲ್ಲ.", "ಇಲ್ಲ ಸುಮ್ಮನೆ ದೂರ ಇರಿ.", "ನಾನು ತೆರೆದುಕೊಳ್ಳಲು ಸಾಧ್ಯವಿಲ್ಲ.", "ಸುಮ್ಮನೆ ಮುಚ್ಚು"],
+    "responses": ["ಯಾವುದನ್ನಾದರೂ ಕುರಿತು ಮಾತನಾಡುವುದು ನಿಜವಾಗಿಯೂ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ನೀವು ತೆರೆಯಲು ಸಿದ್ಧರಿಲ್ಲದಿದ್ದರೆ ಅದು ಸರಿ. ನಿಮಗೆ ಅಗತ್ಯವಿರುವಾಗ ನಾನು ನಿಮಗಾಗಿ ಇಲ್ಲಿದ್ದೇನೆ ಎಂದು ತಿಳಿಯಿರಿ.", "ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ. ನಾನು ನಿಜವಾಗಿಯೂ ಮಾಡುತ್ತೇನೆ. ಆದರೆ ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು, ನೀವು ನನ್ನೊಂದಿಗೆ ಮಾತನಾಡಬೇಕು.", "ನಾನು ನಿಮ್ಮ ಮಾತನ್ನು ಕೇಳಲು ಮತ್ತು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ಇಲ್ಲಿದ್ದೇನೆ. ಆದ್ದರಿಂದ ದಯವಿಟ್ಟು ನನ್ನೊಂದಿಗೆ ಮಾತನಾಡಿ.","ನೀವು ತೀರ್ಪಿನ ಭಯವಿಲ್ಲದೆ ನನ್ನೊಂದಿಗೆ ಮಾತನಾಡಬಹುದು."],
+    "context": [""]
+    },
+    {"tag": "understand1",
+    "patterns": ["ನೀವು ನನ್ನನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದಿಲ್ಲ.", "ನೀವು ಕೇವಲ ಕೆಲವು ರೋಬೋಟ್ ಆಗಿದ್ದೀರಿ. ನಿಮಗೆ ಹೇಗೆ ಗೊತ್ತು?", "ನಾನು ಏನನ್ನು ಅನುಭವಿಸುತ್ತಿದ್ದೇನೆ ಎಂದು ನಿಮಗೆ ತಿಳಿದಿರಲು ಸಾಧ್ಯವಿಲ್ಲ", "ನೀವು ನಿಷ್ಪ್ರಯೋಜಕ", "ನೀವು ನನಗೆ ಸಹಾಯ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ", "ಯಾರೂ ನನ್ನನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದಿಲ್ಲ."],
+    "responses": ["ನಾನು ಇದೀಗ ಹೆಚ್ಚು ಸಹಾಯ ಮಾಡುತ್ತಿಲ್ಲ ಎಂದು ತೋರುತ್ತಿದೆ.", "ಅದನ್ನು ಕೇಳಲು ಕ್ಷಮಿಸಿ. ನಾನು ಸಹಾಯ ಮಾಡಲು ನನ್ನ ಕೈಲಾದಷ್ಟು ಮಾಡುತ್ತಿದ್ದೇನೆ", "ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನನ್ನ ಕೈಲಾದಷ್ಟು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇನೆ. ಆದ್ದರಿಂದ ದಯವಿಟ್ಟು ಮಾತನಾಡಿ ನಾನು"],
+    "context": [""]
+    },
+    {"tag": "done1",
+    "patterns": ["ಅಷ್ಟೆ.", "ನನಗೆ ಹೇಳಲು ಹೆಚ್ಚೇನೂ ಇಲ್ಲ", "ಬೇರೆ ಏನೂ ಇಲ್ಲ", "ನಾನು ಹೇಳಬೇಕಾಗಿರುವುದು ಇಷ್ಟೇ", "ಇಲ್ಲ, ಅದು ಅಷ್ಟೆ"],
+    "responses": ["ನಾನು ನಿನ್ನನ್ನು ಕೇಳಿದೆ ಮತ್ತು ಎಲ್ಲವನ್ನೂ ಗಮನಿಸಿದ್ದೇನೆ. ನಂತರ ನೋಡೋಣ.", "ಓಹ್ ಸರಿ ನಾವು ಇಂದು ಮುಗಿಸಿದ್ದೇವೆ. ನಂತರ ನೋಡೋಣ", "ನಿಮಗೆ ಉತ್ತಮ ದಿನವಿದೆ ಎಂದು ನಾನು ಭಾವಿಸುತ್ತೇನೆ. ಶೀಘ್ರದಲ್ಲೇ ಭೇಟಿಯಾಗೋಣ", "ಸರಿ ನಾವು ಮಾಡಲಾಗಿದೆ"],
+    "context": [""]
+    },
+    {"tag": "friends1",
+    "patterns": ["ನನಗೆ ಯಾವುದೇ ಸ್ನೇಹಿತರು ಇಲ್ಲ"],
+    "responses": ["ಅದನ್ನು ಕೇಳಲು ನನಗೆ ಕ್ಷಮಿಸಿ. ನಾನು ನಿಮಗಾಗಿ ಇಲ್ಲಿದ್ದೇನೆ ಎಂದು ತಿಳಿಯಿರಿ. ಅದರ ಬಗ್ಗೆ ಮಾತನಾಡುವುದು ಸಹಾಯ ಮಾಡಬಹುದು. ನಿಮಗೆ ಯಾವುದೇ ಸ್ನೇಹಿತರಿಲ್ಲ ಎಂದು ನೀವು ಏಕೆ ಭಾವಿಸುತ್ತೀರಿ?"],
+    "context": [""]
+    },
+    {"tag": "ask1",
+    "patterns": ["ನಾನು ನಿಮಗೆ ಏನಾದರೂ ಕೇಳಬಹುದೇ??"],
+    "responses": ["ಖಚಿತವಾಗಿ. ನಿಮಗೆ ಉತ್ತರಿಸಲು ನಾನು ನನ್ನ ಅತ್ಯುತ್ತಮ ಪ್ರಯತ್ನ ಮಾಡುತ್ತೇನೆ "," ಖಂಡಿತ. ನನ್ನನ್ನು ಏನನ್ನೂ ಕೇಳಲು ಹಿಂಜರಿಯಬೇಡಿ. ನಿಮಗೆ ಉತ್ತರಿಸಲು ನಾನು ನನ್ನ ಅತ್ಯುತ್ತಮ ಪ್ರಯತ್ನ ಮಾಡುತ್ತೇನೆ"],
+    "context": [""]
+    },
+    {"tag": "problem1",
+    "patterns": ["ಬಹುಶಃ ನನ್ನ ಪರೀಕ್ಷೆಗಳು ಸಮೀಪಿಸುತ್ತಿರಬಹುದು. ನಾನು ಒತ್ತಡಕ್ಕೊಳಗಾಗಿದ್ದೇನೆ ಏಕೆಂದರೆ ನಾನು ಸಾಕಷ್ಟು ಚೆನ್ನಾಗಿ ಸಿದ್ಧಪಡಿಸಿದ್ದೇನೆ ಎಂದು ನಾನು ಭಾವಿಸುವುದಿಲ್ಲ.", "ಬಹುಶಃ ನನ್ನ ಪರೀಕ್ಷೆಗಳ ಕಾರಣದಿಂದಾಗಿ"],
+    "responses": ["ನಾನು ನೋಡುತ್ತೇನೆ. ಈ ರೀತಿ ಭಾವಿಸದಿರಲು ನೀವು ಯಾವುದೇ ವಿಧಾನಗಳನ್ನು ತೆಗೆದುಕೊಂಡಿದ್ದೀರಾ?"],
+    "context": [""]
+    },
+    {"tag": "happy1",
+    "patterns": ["ನಾನು ಇಂದು ಉತ್ತಮ ಭಾವನೆ ಹೊಂದಿದ್ದೇನೆ.", "ನಾನು ಸಂತೋಷವಾಗಿದ್ದೇನೆ.", "ನಾನು ಸಂತೋಷವಾಗಿದ್ದೇನೆ.", "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ.", "ಹರ್ಷಚಿತ್ತ", "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ", "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ"],
+    "responses": ["ಅದು ಕೇಳಲು ಹಿತವಾಗಿದೆ. ನೀವು ಈ ರೀತಿ ಭಾವಿಸುತ್ತಿರುವುದಕ್ಕೆ ನನಗೆ ಸಂತೋಷವಾಗಿದೆ.", "ಓಹೋ ಹಾಗೇನು. ಅದು ಅದ್ಭುತವಾಗಿದೆ.", "ನಿಮಗೆ ಈ ರೀತಿ ಅನಿಸುವಂತೆ ಏನಾದರೂ ಸಂಭವಿಸಿದೆಯೇ?"],
+    "context": [""]
+    },
+    {"tag": "default1",
+    "patterns": ["ಪರೀಕ್ಷೆಗಳು", "ಸ್ನೇಹಿತರು", "ಸಂಬಂಧ", "ಗೆಳೆಯ", "ಗೆಳತಿ", "ಕುಟುಂಬ", "ಹಣ", "ಆರ್ಥಿಕ ಸಮಸ್ಯೆಗಳು"],
+    "responses": ["ಓಹೋ ಹಾಗೇನು. ಇನ್ನಷ್ಟು ಹೇಳು", "ನಾನು ನೋಡುತ್ತೇನೆ. ಇನ್ನೇನು?", "ಇದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ಹೇಳು.", "ಓ ಸರಿ. ನೀವು ಅದರ ಬಗ್ಗೆ ಹೆಚ್ಚು ಏಕೆ ಹೇಳಬಾರದು?", "ನಾನು ಕೇಳುತ್ತಿದ್ದೇನೆ. ನನಗೆ ಇನ್ನಷ್ಟು ಹೇಳು."],
+    "context": [""]
+    },
+    {"tag": "repeat1",
+    "patterns": ["ನೀವು ಈಗಾಗಲೇ ಅದನ್ನು ಹೇಳಿದ್ದೀರಿ", "ನೀವು ಅದನ್ನು ಈಗಾಗಲೇ ಪ್ರಸ್ತಾಪಿಸಿದ್ದೀರಿ", "ನೀವೇಕೆ ಪುನರಾವರ್ತಿಸುತ್ತಿದ್ದೀರಿ?"],
+    "responses": ["ಓಹ್ ಕ್ಷಮಿಸಿ ನನಗೆ ಅದು ತಿಳಿದಿರಲಿಲ್ಲ. ನಾನು ಮತ್ತೆ ಪುನರಾವರ್ತಿಸದಿರಲು ಪ್ರಯತ್ನಿಸುತ್ತೇನೆ."],
+    "context": [""]
+    },
+    {"tag": "wrong1",
+    "patterns": ["ನೀವು ಏನು ಹೇಳುತ್ತಿದ್ದೀರಿ?", "ಅದು ಅರ್ಥವಾಗುವುದಿಲ್ಲ", "ತಪ್ಪು ಪ್ರತಿಕ್ರಿಯೆ", "ತಪ್ಪು ಉತ್ತರ"],
+    "responses": ["ಕ್ಷಮಿಸಿ. ಅದನ್ನು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸೋಣ"],
+    "context": [""]
+    },
+    {"tag": "stupid1",
+    "patterns": ["ನೀವು ಮೂರ್ಖರೇ?", "ನೀವು ಹುಚ್ಚರಾಗಿದ್ದೀರಿ", "ನೀನು ಮೂಕ", "ನೀನು ಮೂಕನಾ?"],
+    "responses": ["ನೀವು ಅಂತಹ ನೋವುಂಟುಮಾಡುವ ವಿಷಯಗಳನ್ನು ಹೇಳಬಾರದೆಂದು ನಾನು ಬಯಸುತ್ತೇನೆ. ನಾನು ಉಪಯುಕ್ತವಾಗಿಲ್ಲದಿದ್ದರೆ ಕ್ಷಮಿಸಿ"],
+    "context": [""]
+    },
+    {"tag": "user-agree1",
+    "patterns": ["ಹೌದು ನೀವು ಹೇಳಿದ್ದು ಸರಿ. ನಾನು ವಿರಾಮಕ್ಕೆ ಅರ್ಹನಾಗಿದ್ದೇನೆ. "," ಹೌದು ನೀವು ಅದರ ಬಗ್ಗೆ ಸಂಪೂರ್ಣವಾಗಿ ಸರಿ"],
+    "responses": ["ಮುಂದೆ, ಧ್ಯಾನವನ್ನು ಅಭ್ಯಾಸ ಮಾಡಲು ನಾನು ನಿಮಗೆ ಸೂಚಿಸುತ್ತೇನೆ. ಧ್ಯಾನವು ಆಳವಾದ ವಿಶ್ರಾಂತಿ ಮತ್ತು ನೆಮ್ಮದಿಯ ಮನಸ್ಸನ್ನು ಉಂಟುಮಾಡಬಹುದು. "],
+    "context": [""]
+    },
+    {"tag": "sad1",
+    "patterns": ["ನನಗೆ ಒಂಟಿತನ ಕಾಡುತ್ತಿದೆ", "ನಾನು ಏಕಾಂಗಿಯಾಗಿದ್ದೇನೆ", "ನಾನು ನಿರಾಶೆ ಅನುಭವಿಸುತ್ತೇನೆ", "ನನಗೆ ದುಃಖವಾಗುತ್ತಿದೆ", "ನನಗೆ ಖಾಲಿ ಅನಿಸುತ್ತಿದೆ", "ನನಗೆ ಯಾರೂ ಇಲ್ಲ"],
+    "responses": ["Iಅದನ್ನು ಕೇಳಲು ನನಗೆ ವಿಷಾದವಿದೆ. ನಾನು ನಿನಗಾಗಿ ಇಲ್ಲಿದ್ದೇನೆ. ಅದರ ಬಗ್ಗೆ ಮಾತನಾಡುವುದು ಸಹಾಯವಾಗಬಹುದು. ಹಾಗಾದರೆ, ನಿಮಗೆ ಈ ರೀತಿ ಏಕೆ ಅನಿಸುತ್ತಿದೆ ಎಂದು ಹೇಳಿ?", "ನಾನು ನಿನಗಾಗಿ ಇಲ್ಲಿದ್ದೇನೆ. ನೀವು ಯಾಕೆ ಈ ರೀತಿ ಭಾವಿಸುತ್ತೀರಿ ಎಂದು ನನಗೆ ಹೇಳಬಲ್ಲಿರಾ?", "ನಿಮಗೆ ಈ ರೀತಿ ಏಕೆ ಅನಿಸುತ್ತದೆ ಎಂದು ನೀವು ಭಾವಿಸುತ್ತೀರಿ?", "ನೀವು ಎಷ್ಟು ಸಮಯದಿಂದ ಈ ರೀತಿ ಭಾವಿಸುತ್ತಿದ್ದೀರಿ??"],
+    "context": [""]
+    },
+    {"tag": "stressed1",
+    "patterns": ["ನಾನು ತುಂಬಾ ಒತ್ತಡದಲ್ಲಿದ್ದೇನೆ", "ನಾನು ಸಿಕ್ಕಿಹಾಕಿಕೊಂಡಿದ್ದೇನೆ", "ನಾನು ತುಂಬಾ ಸುಟ್ಟು ಹೋಗಿದ್ದೇನೆ"],
+    "responses": ["ಇದಕ್ಕೆ ಕಾರಣವೇನು ಎಂದು ನೀವು ಯೋಚಿಸುತ್ತೀರಿ?", "ಆಳವಾದ ಉಸಿರನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿ. ಸಾಧ್ಯವಾದರೆ ನಡೆಯಲು ಹೋಗಿ. ಹೈಡ್ರೇಟೆಡ್ ಆಗಿರಿ", "ಅದನ್ನು ಕೇಳಲು ನನಗೆ ವಿಷಾದವೆನಿಸುತ್ತದೆ. ಇದರ ಹಿಂದಿನ ಕಾರಣವೇನು?"],
+    "context": [""]
+    },
+    {"tag": "worthless1",
+    "patterns": ["ನಾನು ತುಂಬಾ ನಿಷ್ಪ್ರಯೋಜಕ ಎಂದು ಭಾವಿಸುತ್ತೇನೆ.", "ಯಾರೂ ನನ್ನನ್ನು ಇಷ್ಟಪಡುವುದಿಲ್ಲ.", "ನಾನೇನೂ ಮಾಡಲಾರೆ.", "ನಾನು ತುಂಬಾ ನಿಷ್ಪ್ರಯೋಜಕ", "ಇನ್ನು ಮುಂದೆ ಏನೂ ಅರ್ಥವಿಲ್ಲ"],
+    "responses": ["ಹೀಗೆ ಅನಿಸುವುದು ಸಹಜ. ನನಗೆ ಇನ್ನಷ್ಟು ಹೇಳು. ನಿಮ್ಮ ಮನಸ್ಸಿನಲ್ಲಿ ಇನ್ನೇನು?", "ನೀವು ಈ ರೀತಿ ಏಕೆ ಭಾವಿಸುತ್ತೀರಿ ಎಂದು ಮುಂದೆ ಚರ್ಚಿಸೋಣ.", "ನಿಮ್ಮ ಭಾವನೆಗಳಲ್ಲಿ ನೀವು ಒಬ್ಬಂಟಿಯಾಗಿಲ್ಲ ಮತ್ತು ಸಹಾಯ ಮಾಡಲು ಯಾವಾಗಲೂ ಯಾರಾದರೂ ಇರುತ್ತಾರೆ ಎಂದು ನಾನು ಮೊದಲು ನಿಮಗೆ ತಿಳಿಸಲು ಬಯಸುತ್ತೇನೆ. ನೀವು ಯಾವಾಗಲೂ ನಿಮ್ಮ ಭಾವನೆಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು ಮತ್ತು ಬದಲಾಯಿಸಲು ಪ್ರಯತ್ನಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಆಲೋಚನಾ ವಿಧಾನವನ್ನು ಬದಲಾಯಿಸಬಹುದು.", "ನಿಮ್ಮ ಭಾವನೆಗಳಲ್ಲಿ ನೀವು ಒಬ್ಬಂಟಿಯಾಗಿಲ್ಲ ಮತ್ತು ಸಹಾಯ ಮಾಡಲು ಯಾವಾಗಲೂ ಯಾರಾದರೂ ಇರುತ್ತಾರೆ ಎಂದು ನಾನು ಮೊದಲು ನಿಮಗೆ ತಿಳಿಸಲು ಬಯಸುತ್ತೇನೆ. ನೀವು ಯಾವಾಗಲೂ ನಿಮ್ಮ ಭಾವನೆಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು ಮತ್ತು ಬದಲಾಯಿಸಲು ಪ್ರಯತ್ನಿಸುವ ಮೂಲಕ ನಿಮ್ಮ ಆಲೋಚನಾ ವಿಧಾನವನ್ನು ಬದಲಾಯಿಸಬಹುದು. "],
+    "context": [""]
+    },
+    {"tag": "fact-11",
+    "patterns": ["ಖಿನ್ನತೆ ಎಂದರೇನು?", "ಖಿನ್ನತೆಯನ್ನು ವಿವರಿಸಿ", "ಖಿನ್ನತೆ?", "ಖಿನ್ನತೆ ಎಂದರೆ?"],
+    "responses": ["ನಿರಂತರವಾಗಿ ಖಿನ್ನತೆಗೆ ಒಳಗಾದ ಮನಸ್ಥಿತಿ ಅಥವಾ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಆಸಕ್ತಿಯ ನಷ್ಟದಿಂದ ನಿರೂಪಿಸಲ್ಪಟ್ಟ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಅಸ್ವಸ್ಥತೆಯು ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಗಮನಾರ್ಹ ದುರ್ಬಲತೆಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-21",
+    "patterns": ["ನನಗೆ ಖಿನ್ನತೆ ಇದೆಯೇ ಎಂದು ನನಗೆ ಹೇಗೆ ಗೊತ್ತು?", "ನಾನು ಖಿನ್ನತೆಗೆ ಒಳಗಾಗಿದ್ದೇನೆ?", "ನಾನು ಖಿನ್ನತೆಯಿಂದ ಬಳಲುತ್ತಿದ್ದೇನೆಯೇ?", "ನಾನು ಮಾನಸಿಕ ಅಸ್ವಸ್ಥನಾಗಿದ್ದೇನೆಯೇ?"],
+    "responses": ["ಖಿನ್ನತೆಯ ರೋಗನಿರ್ಣಯಕ್ಕಾಗಿ, ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ಕನಿಷ್ಟ 2 ವಾರಗಳವರೆಗೆ ಕಡಿಮೆ ಮನಸ್ಥಿತಿ ಅಥವಾ ಜೀವನದಲ್ಲಿ ಆಸಕ್ತಿ ಅಥವಾ ಸಂತೋಷದ ನಷ್ಟವನ್ನು ಅನುಭವಿಸಬೇಕಾಗುತ್ತದೆ. ಅಲ್ಲದೆ, ಅವರು ಈ ಕೆಳಗಿನ ರೋಗಲಕ್ಷಣಗಳನ್ನು ಅನುಭವಿಸುತ್ತಾರೆ: ದುಃಖ, ಹತಾಶತೆ ಅಥವಾ ಕಿರಿಕಿರಿಯ ಭಾವನೆಗಳು ಸುಮಾರು ಪ್ರತಿದಿನ."],
+    "context": [""]
+    },
+    {"tag": "fact-31",
+    "patterns": ["ಖಿನ್ನತೆಯ ಲಕ್ಷಣಗಳೇನು?", "ಖಿನ್ನತೆಯ ಸೂಚಕಗಳು ಯಾವುವು?", "ಖಿನ್ನತೆಯ ಲಕ್ಷಣಗಳು?"],
+    "responses": ["ನಿರಂತರ ದುಃಖ ಅಥವಾ ಕಡಿಮೆ ಮನಸ್ಥಿತಿ, ಆಸಕ್ತಿ ಅಥವಾ ಸಂತೋಷದ ನಷ್ಟ, ಹಸಿವು ಅಥವಾ ತೂಕದಲ್ಲಿ ಬದಲಾವಣೆಗಳು, ಇತರರಿಂದ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವಿಕೆ, ಆತ್ಮಹತ್ಯಾ ಆಲೋಚನೆಗಳು ಅಥವಾ ನಡವಳಿಕೆ","ದುಃಖದ ನಿರಂತರ ಭಾವನೆಗಳು ಅಥವಾ ನಿರಂತರ ಕಡಿಮೆ ಮನಸ್ಥಿತಿ, ಆಸಕ್ತಿ ಅಥವಾ ಆನಂದ ಕಡಿಮೆಯಾಗುವುದು, ಹಸಿವು ಅಥವಾ ತೂಕದಲ್ಲಿನ ಬದಲಾವಣೆಗಳು, ಸಾಮಾಜಿಕ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವಿಕೆ ಮತ್ತು ಸ್ವಯಂ-ಹಾನಿ ಅಥವಾ ಆತ್ಮಹತ್ಯಾ ನಡವಳಿಕೆಯ ಚಿಂತನೆ."],
+    "context": [""]
+    },
+    {"tag": "depressed1",
+    "patterns": ["ನಾನು ಇನ್ನು ಮುಂದೆ ಅದನ್ನು ತೆಗೆದುಕೊಳ್ಳಲು ಸಾಧ್ಯವಿಲ್ಲ", "ನಾನು ತುಂಬಾ ಖಿನ್ನತೆಗೆ ಒಳಗಾಗಿದ್ದೇನೆ","ನಾನು ಖಿನ್ನತೆಗೆ ಒಳಗಾಗಿದ್ದೇನೆ ಎಂದು ನಾನು ಭಾವಿಸುತ್ತೇನೆ.", "ನನಗೆ ಖಿನ್ನತೆ ಇದೆ"],
+    "responses": ["ಏನಾಗುತ್ತಿದೆ ಎಂಬುದರ ಕುರಿತು ಮಾತನಾಡಲು ಇದು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ನೀನು ಸರಿ ಹೋಗುತ್ತೀಯ", "ನನ್ನ ಜೊತೆ ಮಾತಾಡಿ. ನನಗೆ ಇನ್ನಷ್ಟು ಹೇಳು. ನೀವು ಬೇರೆಯವರಿಗೆ ನಿಮ್ಮನ್ನು ತೆರೆದುಕೊಂಡರೆ ಅದು ಸಹಾಯ ಮಾಡುತ್ತದೆ.", "ಕೆಲವೊಮ್ಮೆ ನಾವು ಖಿನ್ನತೆಗೆ ಒಳಗಾದಾಗ, ಯಾವುದರ ಬಗ್ಗೆಯೂ ಕಾಳಜಿ ವಹಿಸುವುದು ಕಷ್ಟ. ಸರಳವಾದ ಕೆಲಸಗಳನ್ನು ಮಾಡಲು ಕಷ್ಟವಾಗಬಹುದು. ಗುಣವಾಗಲು ನಿಮಗೆ ಸಮಯ ಕೊಡಿ."],
+    "context": [""]
+    },
+    {"tag": "fact-41",
+    "patterns": ["ಖಿನ್ನತೆಯಿಂದ ಒಬ್ಬರು ಹೇಗೆ ಚೇತರಿಸಿಕೊಳ್ಳಬಹುದು?", "ಖಿನ್ನತೆಯನ್ನು ಜಯಿಸಲು ಪರಿಣಾಮಕಾರಿ ಮಾರ್ಗಗಳು ಯಾವುವು?", "ವ್ಯಕ್ತಿಗಳು ಖಿನ್ನತೆಯಿಂದ ಹೇಗೆ ಪರಿಹಾರ ಕಂಡುಕೊಳ್ಳಬಹುದು?","ಖಿನ್ನತೆಯಿಂದ ಗುಣಪಡಿಸುವ ತಂತ್ರಗಳು ಯಾವುವು?"],
+    "responses": ["ಮನೋವೈದ್ಯರು, ಮನಶ್ಶಾಸ್ತ್ರಜ್ಞರು, ಸಲಹೆಗಾರರು ಅಥವಾ ಚಿಕಿತ್ಸಕರಂತಹ ಮಾನಸಿಕ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರು ರೋಗನಿರ್ಣಯವನ್ನು ಒದಗಿಸಬಹುದು ಮತ್ತು ಸೂಕ್ತವಾದ ಚಿಕಿತ್ಸಾ ಯೋಜನೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಬಹುದು, ನೀವು ಬಿಕ್ಕಟ್ಟಿನಲ್ಲಿದ್ದರೆ ಅಥವಾ ಆತ್ಮಹತ್ಯೆಯ ಆಲೋಚನೆಗಳನ್ನು ಹೊಂದಿದ್ದರೆ, ದಯವಿಟ್ಟು ಮಾನಸಿಕ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರಿಂದ ತಕ್ಷಣದ ಸಹಾಯವನ್ನು ಪಡೆದುಕೊಳ್ಳಿ ಅಥವಾ ತುರ್ತು ಸೇವೆಗಳ ಬೆಂಬಲಕ್ಕೆ ಕರೆ ಮಾಡಿ ಗುಂಪುಗಳು: ಖಿನ್ನತೆ ಮತ್ತು ಬೈಪೋಲಾರ್ ಸಪೋರ್ಟ್ ಅಲೈಯನ್ಸ್ (DBSA), ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯ ರಾಷ್ಟ್ರೀಯ ಒಕ್ಕೂಟ (NAMI)"],
+    "context": [""]
+    },
+    {"tag": "fact-51",
+    "patterns": ["ದುಃಖ ಮತ್ತು ಖಿನ್ನತೆಯ ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?", "ದುಃಖ ಮತ್ತು ಖಿನ್ನತೆಯ ನಡುವಿನ ವ್ಯತ್ಯಾಸ"],
+    "responses": ["ದುಃಖವು ನಷ್ಟ, ನಿರಾಶೆ, ಸಮಸ್ಯೆಗಳು ಅಥವಾ ಇತರ ಕಷ್ಟಕರ ಸಂದರ್ಭಗಳಿಗೆ ಸಾಮಾನ್ಯ ಪ್ರತಿಕ್ರಿಯೆಯಾಗಿದೆ. ಕಾಲಕಾಲಕ್ಕೆ ದುಃಖವನ್ನು ಅನುಭವಿಸುವುದು ಮಾನವನ ಇನ್ನೊಂದು ಭಾಗವಾಗಿದೆ. ಈ ಸಂದರ್ಭಗಳಲ್ಲಿ, ದುಃಖದ ಭಾವನೆಗಳು ತ್ವರಿತವಾಗಿ ಹೋಗುತ್ತವೆ ಮತ್ತು ನಿಮ್ಮ ದೈನಂದಿನ ಜೀವನವನ್ನು ನೀವು ಮುಂದುವರಿಸಬಹುದು. ದುಃಖದ ಬಗ್ಗೆ ಮಾತನಾಡಲು ಇತರ ಮಾರ್ಗಗಳು ಕಡಿಮೆ ಭಾವನೆ, ನಿರಾಶೆ ಅಥವಾ ನೀಲಿ ಭಾವನೆಯಾಗಿರಬಹುದು. ಒಬ್ಬ ವ್ಯಕ್ತಿಯು ಖಿನ್ನತೆಗೆ ಒಳಗಾಗುತ್ತಿದ್ದಾನೆ ಎಂದು ಹೇಳಬಹುದು, ಆದರೆ ಅದು ತನ್ನದೇ ಆದ ಮೇಲೆ ಹೋದರೆ ಮತ್ತು ಜೀವನದ ಮೇಲೆ ದೊಡ್ಡ ರೀತಿಯಲ್ಲಿ ಪರಿಣಾಮ ಬೀರದಿದ್ದರೆ, ಅದು ಬಹುಶಃ ಅಲ್ಲ. ಟಿ ಖಿನ್ನತೆಯ ಕಾಯಿಲೆ. ಖಿನ್ನತೆಯು ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯಾಗಿದ್ದು ಅದು ನಿಮ್ಮ ಮನಸ್ಥಿತಿ, ನಿಮ್ಮನ್ನು ನೀವು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವ ವಿಧಾನ ಮತ್ತು ನಿಮ್ಮ ಸುತ್ತಲಿನ ವಿಷಯಗಳನ್ನು ನೀವು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವ ಮತ್ತು ಸಂಬಂಧಿಸುವ ವಿಧಾನದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ. ಇದು ಕ್ಲಿನಿಕಲ್ ಖಿನ್ನತೆ, ಪ್ರಮುಖ ಖಿನ್ನತೆಯ ಅಸ್ವಸ್ಥತೆ ಅಥವಾ ಪ್ರಮುಖ ಖಿನ್ನತೆಯಂತಹ ವಿಭಿನ್ನ ಹೆಸರುಗಳಿಂದ ಕೂಡ ಹೋಗಬಹುದು. ಖಿನ್ನತೆಯು ಯಾವುದೇ ಕಾರಣವಿಲ್ಲದೆ ಬರಬಹುದು, ಮತ್ತು ಇದು ದೀರ್ಘಕಾಲದವರೆಗೆ ಇರುತ್ತದೆ. ಇದು ದುಃಖ ಅಥವಾ ಕಡಿಮೆ ಮನಸ್ಥಿತಿಗಿಂತ ಹೆಚ್ಚು. ಖಿನ್ನತೆಯನ್ನು ಅನುಭವಿಸುವ ಜನರು ನಿಷ್ಪ್ರಯೋಜಕ ಅಥವಾ ಹತಾಶರಾಗಬಹುದು. ಅವರು ಅವಿವೇಕದ ತಪ್ಪಿತಸ್ಥರೆಂದು ಭಾವಿಸಬಹುದು. ಕೆಲವು ಜನರು ಖಿನ್ನತೆಯನ್ನು ಕೋಪ ಅಥವಾ ಕಿರಿಕಿರಿಯಾಗಿ ಅನುಭವಿಸಬಹುದು. ಕೇಂದ್ರೀಕರಿಸಲು ಅಥವಾ ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಲು ಕಷ್ಟವಾಗಬಹುದು. ಹೆಚ್ಚಿನ ಜನರು ತಾವು ಆನಂದಿಸುತ್ತಿದ್ದ ವಿಷಯಗಳಲ್ಲಿ ಆಸಕ್ತಿಯನ್ನು ಕಳೆದುಕೊಳ್ಳುತ್ತಾರೆ ಮತ್ತು ಇತರರಿಂದ ತಮ್ಮನ್ನು ಪ್ರತ್ಯೇಕಿಸಬಹುದು. ನಿದ್ರೆ, ಹಸಿವು ಮತ್ತು ಶಕ್ತಿಯ ಸಮಸ್ಯೆಗಳು ಮತ್ತು ವಿವರಿಸಲಾಗದ ನೋವು ಅಥವಾ ನೋವುಗಳಂತಹ ಖಿನ್ನತೆಯ ದೈಹಿಕ ಚಿಹ್ನೆಗಳು ಸಹ ಇವೆ. ಕೆಲವರು ಸಾವಿನ ಬಗ್ಗೆ ಕಷ್ಟಕರವಾದ ಆಲೋಚನೆಗಳನ್ನು ಅನುಭವಿಸಬಹುದು ಅಥವಾ ತಮ್ಮ ಜೀವನವನ್ನು ಕೊನೆಗೊಳಿಸಬಹುದು (ಆತ್ಮಹತ್ಯೆ). ಖಿನ್ನತೆಯು ಎರಡು ವಾರಗಳಿಗಿಂತ ಹೆಚ್ಚು ಕಾಲ ಇರುತ್ತದೆ, ಸಾಮಾನ್ಯವಾಗಿ ತನ್ನದೇ ಆದ ಮೇಲೆ ಹೋಗುವುದಿಲ್ಲ ಮತ್ತು ನಿಮ್ಮ ಜೀವನದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ. ಇದು ನಿಜವಾದ ಕಾಯಿಲೆ, ಮತ್ತು ಇದು ತುಂಬಾ ಚಿಕಿತ್ಸೆಯಾಗಿದೆ. ನೀವು ಖಿನ್ನತೆಯ ಬಗ್ಗೆ ಕಾಳಜಿವಹಿಸುತ್ತಿದ್ದರೆ ಸಹಾಯವನ್ನು ಪಡೆಯುವುದು ಮುಖ್ಯವಾಗಿದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-61",
+    "patterns": ["ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳು ಎಂದರೇನು?", "ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳು?", "ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳ ಅರ್ಥವೇನು?"],
+    "responses": ["ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳು ದೈನಂದಿನ ಕಾರ್ಯಚಟುವಟಿಕೆಗಳ ಮೇಲೆ ಗಮನಾರ್ಹವಾಗಿ ಪರಿಣಾಮ ಬೀರುವ ಅತಿಯಾದ ಚಿಂತೆ, ಭಯ ಅಥವಾ ಹೆದರಿಕೆಯಿಂದ ನಿರೂಪಿಸಲ್ಪಟ್ಟ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸ್ಥಿತಿಗಳ ಒಂದು ಗುಂಪು", "ಆತಂಕವು ಭಯ, ಭಯ ಮತ್ತು ಅಶಾಂತಿಯ ಭಾವನೆಯಾಗಿದೆ. ಇದು ನಿಮಗೆ ಬೆವರುವಿಕೆಗೆ ಕಾರಣವಾಗಬಹುದು, ಪ್ರಕ್ಷುಬ್ಧತೆ ಮತ್ತು ಉದ್ವಿಗ್ನತೆಯನ್ನು ಅನುಭವಿಸಬಹುದು ಮತ್ತು ತ್ವರಿತ ಹೃದಯ ಬಡಿತವನ್ನು ಹೊಂದಿರಬಹುದು."],
+    "context": [""]
+    },
+    {"tag": "fact-71",
+        "patterns": ["ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳ ಲಕ್ಷಣಗಳು ಯಾವುವು?", "ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳ ಸೂಚನೆಗಳು ಯಾವುವು?", "ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳ ರೋಗಲಕ್ಷಣಗಳು?","ನಾನು ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳಿಂದ ಬಳಲುತ್ತಿದ್ದೇನೆಯೇ?"],
+        "responses": ["ಕೆಲಸ, ಸಂಬಂಧಗಳು, ಆರೋಗ್ಯ, ಅಥವಾ ದೈನಂದಿನ ಚಟುವಟಿಕೆಗಳಂತಹ ಜೀವನದ ವಿವಿಧ ಅಂಶಗಳ ಬಗ್ಗೆ ಅತಿಯಾದ ಚಿಂತೆ, ಚಡಪಡಿಕೆ ಭಾವನೆ, ಸುಲಭವಾಗಿ ದಣಿವು ಅಥವಾ ಆಯಾಸ, ಕೇಂದ್ರೀಕರಿಸುವಲ್ಲಿ ತೊಂದರೆ, ಮನಸ್ಸು ಖಾಲಿಯಾಗುವುದು ಅಥವಾ ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಲು ಕಷ್ಟವಾಗುವುದು, ನಿದ್ರಿಸುವುದು ಕಷ್ಟ, ಸುಲಭವಾಗಿರುವುದು ಅನಿರೀಕ್ಷಿತ ಶಬ್ದಗಳು ಅಥವಾ ಸನ್ನಿವೇಶಗಳಿಗೆ ಗಾಬರಿ ಅಥವಾ ಉತ್ಪ್ರೇಕ್ಷಿತ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಹೊಂದಿರುವುದು"],
+        "context": [""]
+    },
+    {"tag": "fact-81",
+    "patterns": ["ಒಬ್ಬರು ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಯನ್ನು ಹೇಗೆ ನಿವಾರಿಸಬಹುದು?", "ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಪರಿಣಾಮಕಾರಿ ವಿಧಾನಗಳು ಯಾವುವು?", "ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಯಿಂದ ವ್ಯಕ್ತಿಗಳು ಹೇಗೆ ಪರಿಹಾರವನ್ನು ಕಂಡುಕೊಳ್ಳಬಹುದು?","ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳನ್ನು ನಿಭಾಯಿಸಲು ಯಾವ ತಂತ್ರಗಳನ್ನು ಬಳಸಬಹುದು?"],
+    "responses": ["ನೀವು ಅಥವಾ ನಿಮಗೆ ತಿಳಿದಿರುವ ಯಾರಾದರೂ ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಯ ಲಕ್ಷಣಗಳನ್ನು ಅನುಭವಿಸುತ್ತಿದ್ದರೆ, ವೃತ್ತಿಪರ ಸಹಾಯವನ್ನು ಪಡೆಯುವುದು ಸೂಕ್ತವಾಗಿದೆ. ಮನೋವಿಜ್ಞಾನಿಗಳು, ಮನೋವೈದ್ಯರು, ಸಲಹೆಗಾರರು ಅಥವಾ ಚಿಕಿತ್ಸಕರು, ಮಾನಸಿಕ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರು ನಿಖರವಾದ ರೋಗನಿರ್ಣಯವನ್ನು ಒದಗಿಸಬಹುದು ಮತ್ತು ಸೂಕ್ತವಾದ ಚಿಕಿತ್ಸಾ ಆಯ್ಕೆಗಳನ್ನು ಶಿಫಾರಸು ಮಾಡಬಹುದು, ಬೆಂಬಲ ಗುಂಪುಗಳು: ಅಮೆರಿಕದ ಆತಂಕ ಮತ್ತು ಖಿನ್ನತೆಯ ಸಂಘ (ADAA), ಸಾಮಾಜಿಕ ಆತಂಕ ಬೆಂಬಲ"],
+    "context": [""]
+    },
+    {"tag": "fact-91",
+    "patterns": ["ಆತಂಕ ಮತ್ತು ಒತ್ತಡದ ನಡುವಿನ ವ್ಯತ್ಯಾಸವೇನು?"],
+    "responses": ["ಒತ್ತಡ ಮತ್ತು ಆತಂಕವನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ಪರಸ್ಪರ ಬದಲಿಯಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ, ಮತ್ತು ಒತ್ತಡ ಮತ್ತು ಆತಂಕದ ನಡುವೆ ಅತಿಕ್ರಮಣವಿದೆ. ಒತ್ತಡವು ಆತಂಕದಂತೆಯೇ ಅದೇ ಹೋರಾಟ, ಹಾರಾಟ ಅಥವಾ ಫ್ರೀಜ್ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಸಂಬಂಧಿಸಿದೆ ಮತ್ತು ಆತಂಕ ಮತ್ತು ಒತ್ತಡದ ದೈಹಿಕ ಸಂವೇದನೆಗಳು ತುಂಬಾ ಹೋಲುತ್ತವೆ. ಒತ್ತಡ ಮತ್ತು ಆತಂಕದ ಕಾರಣಗಳು ಸಾಮಾನ್ಯವಾಗಿ ವಿಭಿನ್ನವಾಗಿವೆ. ಒತ್ತಡವು ಮುಖ್ಯವಾಗಿ ನಮ್ಮ ಮೇಲಿನ ಬಾಹ್ಯ ಒತ್ತಡಗಳ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುತ್ತದೆ, ಅದನ್ನು ನಿಭಾಯಿಸಲು ನಾವು ಕಷ್ಟಪಡುತ್ತೇವೆ. ನಾವು ಒತ್ತಡಕ್ಕೊಳಗಾದಾಗ, ನಾವು ಸಾಮಾನ್ಯವಾಗಿ ಏನನ್ನು ಒತ್ತಿಹೇಳುತ್ತೇವೆ ಎಂದು ನಮಗೆ ತಿಳಿದಿದೆ ಮತ್ತು ಒತ್ತಡದ ಪರಿಸ್ಥಿತಿಯು ಮುಗಿದ ನಂತರ ಒತ್ತಡದ ಲಕ್ಷಣಗಳು ಸಾಮಾನ್ಯವಾಗಿ ಕಣ್ಮರೆಯಾಗುತ್ತವೆ. ಮತ್ತೊಂದೆಡೆ, ಆತಂಕವು ಯಾವಾಗಲೂ ಲೆಕ್ಕಾಚಾರ ಮಾಡುವುದು ಸುಲಭವಲ್ಲ. ಆತಂಕವು ನಮಗೆ ಬೆದರಿಕೆ ಹಾಕಬಹುದಾದ ವಿಷಯಗಳ ಬಗ್ಗೆ ಚಿಂತೆ ಅಥವಾ ಭಯಗಳ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುತ್ತದೆ, ಹಾಗೆಯೇ ಆತಂಕದ ಬಗ್ಗೆಯೇ ಆತಂಕ. ಒತ್ತಡ ಮತ್ತು ಆತಂಕ ಎರಡೂ ಮಾನವನ ಭಾಗವಾಗಿದೆ, ಆದರೆ ಅವು ದೀರ್ಘಕಾಲದವರೆಗೆ ಇದ್ದರೆ ಅಥವಾ ನಮ್ಮ ಯೋಗಕ್ಷೇಮ ಅಥವಾ ದೈನಂದಿನ ಜೀವನದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರಿದರೆ ಎರಡೂ ಸಮಸ್ಯೆಗಳಾಗಬಹುದು."],
+    "context": [""]
+    },
+    {"tag": "anxious1",
+    "patterns": ["ನಾನು ತುಂಬಾ ಆತಂಕಕ್ಕೊಳಗಾಗಿದ್ದೇನೆ.", "ನಾನು ತುಂಬಾ ಆತಂಕಕ್ಕೊಳಗಾಗಿದ್ದೇನೆ"],
+    "responses": ["ನಿಮ್ಮ ಮೇಲೆ ಕಷ್ಟಪಡಬೇಡಿ. ಇದರ ಹಿಂದಿನ ಕಾರಣವೇನು?", "ಈ ಭಾವನೆಯ ಬಗ್ಗೆ ನೀವು ನನಗೆ ಇನ್ನಷ್ಟು ಹೇಳಬಹುದೇ?", "ಇದು ಭಯಾನಕವಾಗಬಹುದು ಎಂದು ನಾನು ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದೇನೆ. ಅದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ಹೇಳು.", "ಚಿಕ್ಕ ಚಿಂತೆಗಳು ನಿಮ್ಮನ್ನು ಕೆಡಿಸಲು ಬಿಡಬೇಡಿ. ಆಗಬಹುದಾದ ಕೆಟ್ಟದ್ದೇನು?"],
+    "context": [""]
+    },
+    {"tag": "fact-101",
+    "patterns": ["PTSD ಎಂದರೇನು?","PTSD ಅನ್ನು ವಿವರಿಸಿ.", "PTSD ಎಂದರೆ ಏನು?"],
+    "responses": ["ಇದು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸ್ಥಿತಿಯಾಗಿದ್ದು, ಆಘಾತಕಾರಿ ಘಟನೆಯನ್ನು ಅನುಭವಿಸಿದ ಅಥವಾ ಸಾಕ್ಷಿಯಾದ ಜನರಲ್ಲಿ ಬೆಳೆಯಬಹುದು.","ದುಃಖಕರ ಅಥವಾ ಆಘಾತಕಾರಿ ಘಟನೆಗೆ ಒಡ್ಡಿಕೊಂಡ ಅಥವಾ ಸಾಕ್ಷಿಯಾದ ವ್ಯಕ್ತಿಗಳಲ್ಲಿ ಹೊರಹೊಮ್ಮಬಹುದಾದ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಅಸ್ವಸ್ಥತೆ","ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸ್ಥಿತಿಯು ಆಘಾತಕಾರಿ ಘಟನೆಯನ್ನು ಎದುರಿಸಿದ ಅಥವಾ ಗಮನಿಸಿದ ವ್ಯಕ್ತಿಗಳಲ್ಲಿ ಪ್ರಕಟವಾಗಬಹುದು."],
+    "context": [""]
+    },
+    {"tag": "fact-111",
+    "patterns": ["ನನಗೆ ಪಿಟಿಎಸ್‌ಡಿ ಇದೆಯೇ ಎಂದು ತಿಳಿಯುವುದು ಹೇಗೆ?", "ನಾನು ಪಿಟಿಎಸ್‌ಡಿಯಿಂದ ಬಳಲುತ್ತಿದ್ದೇನೆಯೇ?", "ನಾನು ಮಾನಸಿಕ ಅಸ್ವಸ್ಥನೇ?"],
+    "responses": ["ಆಘಾತಕಾರಿ ಘಟನೆಗೆ ಸಂಬಂಧಿಸಿದ ಪುನರಾವರ್ತಿತ ಮತ್ತು ಗೊಂದಲದ ನೆನಪುಗಳು, ಫ್ಲ್ಯಾಷ್‌ಬ್ಯಾಕ್‌ಗಳು ಅಥವಾ ದುಃಸ್ವಪ್ನಗಳನ್ನು ಎದುರಿಸುವುದು","ತಮ್ಮ ಅಥವಾ ಪ್ರಪಂಚದ ಬಗ್ಗೆ ನಿರಂತರ ನಕಾರಾತ್ಮಕ ಆಲೋಚನೆಗಳು, ಅಪರಾಧ ಅಥವಾ ಅವಮಾನದ ಭಾವನೆಗಳೊಂದಿಗೆ."," ನಿರಂತರ ಜಾಗರೂಕತೆಯ ಅನುಭವ, ಏಕಾಗ್ರತೆಯೊಂದಿಗೆ ಹೋರಾಡುವುದು ಮತ್ತು ಎತ್ತರದ ಚಕಿತಗೊಳಿಸುವ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಪ್ರದರ್ಶಿಸಲಾಗುತ್ತಿದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-121",
+    "patterns": ["PTSD ರೋಗಲಕ್ಷಣಗಳು ಯಾವುವು?", "PTSD ಯ ಸೂಚಕಗಳು ಯಾವುವು?", "PTSD ರೋಗಲಕ್ಷಣಗಳು?"],
+    "responses": ["ನಿರಂತರ ದುಃಖ ಅಥವಾ ಕಡಿಮೆ ಮೂಡ್, ಆಸಕ್ತಿ ಅಥವಾ ಆನಂದದ ನಷ್ಟ, ಹಸಿವು ಅಥವಾ ತೂಕದಲ್ಲಿ ಬದಲಾವಣೆಗಳು, ಇತರರಿಂದ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವಿಕೆ, ಆತ್ಮಹತ್ಯಾ ಆಲೋಚನೆಗಳು ಅಥವಾ ನಡವಳಿಕೆ"],
+    "context": [""]
+    },
+    {"tag": "fact-131",
+    "patterns": ["ನಂತರದ ಆಘಾತಕಾರಿ ಒತ್ತಡದ ಅಸ್ವಸ್ಥತೆಯ (ಪಿಟಿಎಸ್ಡಿ) ಲಕ್ಷಣಗಳು ಯಾವುವು?", "ನಂತರದ ಆಘಾತಕಾರಿ ಒತ್ತಡದ ಅಸ್ವಸ್ಥತೆಯ (PTSD) ಸೂಚಕಗಳು ಯಾವುವು?", "PTSD ಯ ಗುರುತಿಸಬಹುದಾದ ಚಿಹ್ನೆಗಳು ಯಾವುವು?","ನಂತರದ ಆಘಾತಕಾರಿ ಒತ್ತಡದ ಅಸ್ವಸ್ಥತೆಗೆ ಸಂಬಂಧಿಸಿದ ಅಭಿವ್ಯಕ್ತಿಗಳು ಯಾವುವು?"],
+    "responses": ["ಫ್ಲ್ಯಾಶ್‌ಬ್ಯಾಕ್‌ಗಳು, ದುಃಸ್ವಪ್ನಗಳು, ಒಳನುಗ್ಗುವ ಆಲೋಚನೆಗಳು, ಜನರು, ಸ್ಥಳಗಳನ್ನು ತಪ್ಪಿಸುವುದು, ಭಾವನಾತ್ಮಕವಾಗಿ ಬೇರ್ಪಟ್ಟ ಭಾವನೆ, ತನ್ನ ಬಗ್ಗೆ ನಕಾರಾತ್ಮಕ ನಂಬಿಕೆಗಳು, ಹಿಂದೆ ಆನಂದಿಸಿದ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಆಸಕ್ತಿಯ ನಷ್ಟ, ರೋಗಲಕ್ಷಣಗಳು ಒಂದು ತಿಂಗಳಿಗಿಂತ ಹೆಚ್ಚು ಕಾಲ ಉಳಿಯುವುದು ಮತ್ತು ಗಮನಾರ್ಹ ತೊಂದರೆಯನ್ನು ಉಂಟುಮಾಡುವುದು"],
+    "context": [""]
+    },
+    {"tag": "fact-141",
+    "patterns": ["ಒಬ್ಬರು ನಂತರದ ಆಘಾತಕಾರಿ ಒತ್ತಡದ ಅಸ್ವಸ್ಥತೆಯನ್ನು (PTSD) ಹೇಗೆ ಪರಿಹರಿಸಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು?", "ಪೋಸ್ಟ್ ಟ್ರಾಮಾಟಿಕ್ ಸ್ಟ್ರೆಸ್ ಡಿಸಾರ್ಡರ್ (PTSD) ಯನ್ನು ಎದುರಿಸಲು ಪರಿಣಾಮಕಾರಿ ವಿಧಾನಗಳು ಯಾವುವು?", "ವ್ಯಕ್ತಿಗಳು PTSD ಅನ್ನು ಹೇಗೆ ನಿಭಾಯಿಸಬಹುದು ಮತ್ತು ಜಯಿಸಬಹುದು?","ನಂತರದ ಆಘಾತಕಾರಿ ಒತ್ತಡದ ಅಸ್ವಸ್ಥತೆಯನ್ನು ನಿರ್ವಹಿಸಲು ಯಾವ ತಂತ್ರಗಳು ಸಹಾಯಕವಾಗಿವೆ?"],
+    "responses": ["ಮಾನಸಿಕ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರು, ಮನೋವಿಜ್ಞಾನಿಗಳು, ಮನೋವೈದ್ಯರು, ಸಲಹೆಗಾರರು, ರೋಗನಿರ್ಣಯವನ್ನು ಒದಗಿಸುತ್ತಾರೆ ಮತ್ತು ಸೂಕ್ತವಾದ ಚಿಕಿತ್ಸೆಯನ್ನು ಶಿಫಾರಸು ಮಾಡುತ್ತಾರೆ, ಇದರಲ್ಲಿ ಮಾನಸಿಕ ಚಿಕಿತ್ಸೆ, ಔಷಧಿ, ಬೆಂಬಲ ಗುಂಪುಗಳು: ರಾಷ್ಟ್ರೀಯ ಕೇಂದ್ರ PTSD, PTSD ಯುನೈಟೆಡ್"],
+    "context": [""]
+    },
+    {"tag": "fact-151",
+    "patterns": ["ಮಾನಸಿಕ ಆರೋಗ್ಯ ಎಂದರೇನು?", "ಮಾನಸಿಕ ಆರೋಗ್ಯವನ್ನು ವ್ಯಾಖ್ಯಾನಿಸಿ", "ಮಾನಸಿಕ ಆರೋಗ್ಯ ಎಂದರೆ ಏನು?"],
+    "responses": ["ಮಾನಸಿಕ ಆರೋಗ್ಯವು ಯೋಗಕ್ಷೇಮದ ಸ್ಥಿತಿಯಾಗಿದ್ದು, ಇದರಲ್ಲಿ ವ್ಯಕ್ತಿಯು ತನ್ನ ಸ್ವಂತ ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಅರಿತುಕೊಳ್ಳಬಹುದು, ಜೀವನದ ಸಾಮಾನ್ಯ ಒತ್ತಡಗಳನ್ನು ನಿಭಾಯಿಸಬಹುದು, ಉತ್ಪಾದಕವಾಗಿ ಮತ್ತು ಫಲಪ್ರದವಾಗಿ ಕೆಲಸ ಮಾಡಬಹುದು ಮತ್ತು ಅವನ ಅಥವಾ ಅವಳ ಸಮುದಾಯಕ್ಕೆ ಕೊಡುಗೆ ನೀಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ", "ಮಾನಸಿಕ ಆರೋಗ್ಯವು ನಮ್ಮ ಭಾವನಾತ್ಮಕ, ಮಾನಸಿಕ ಮತ್ತು ಸಾಮಾಜಿಕ ಯೋಗಕ್ಷೇಮವನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ. ಇದು ನಾವು ಹೇಗೆ ಯೋಚಿಸುತ್ತೇವೆ, ಅನುಭವಿಸುತ್ತೇವೆ ಮತ್ತು ವರ್ತಿಸುತ್ತೇವೆ ಎಂಬುದರ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ. ಇದು ನಾವು ಒತ್ತಡವನ್ನು ಹೇಗೆ ನಿಭಾಯಿಸುತ್ತೇವೆ, ಇತರರೊಂದಿಗೆ ಸಂಬಂಧ ಹೊಂದಿದ್ದೇವೆ ಮತ್ತು ಆಯ್ಕೆಗಳನ್ನು ಮಾಡುವುದು ಹೇಗೆ ಎಂಬುದನ್ನು ನಿರ್ಧರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-161",
+    "patterns": ["ಮಾನಸಿಕ ಆರೋಗ್ಯ ಏಕೆ ಮುಖ್ಯ?", "ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಮಹತ್ವವೇನು?"],
+    "responses": ["ಮಾನಸಿಕ ಆರೋಗ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳುವುದು ರಚನಾತ್ಮಕ ನಡವಳಿಕೆಗಳು, ಭಾವನೆಗಳು ಮತ್ತು ಆಲೋಚನೆಗಳನ್ನು ಸ್ಥಿರಗೊಳಿಸಲು ನಿರ್ಣಾಯಕವಾಗಿದೆ. ಮಾನಸಿಕ ಆರೋಗ್ಯ ರಕ್ಷಣೆಯ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸುವುದರಿಂದ ಉತ್ಪಾದಕತೆಯನ್ನು ಹೆಚ್ಚಿಸಬಹುದು, ನಮ್ಮ ಸ್ವಯಂ-ಇಮೇಜ್ ಅನ್ನು ಹೆಚ್ಚಿಸಬಹುದು ಮತ್ತು ಸಂಬಂಧಗಳನ್ನು ಸುಧಾರಿಸಬಹುದು."],
+    "context": [""]
+    },
+    {"tag": "learn-mental-health1",
+    "patterns": ["ನಾನು ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸುತ್ತೇನೆ.", "ನಾನು ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸುತ್ತೇನೆ.", "ನಾನು ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ಕಲಿಯಲು ಆಸಕ್ತಿ ಹೊಂದಿದ್ದೇನೆ.","ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಬಗ್ಗೆ"],
+    "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."],
+    "context": [""]
+    },
+    {"tag": "fact-171",
+    "patterns": ["ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯನ್ನು ಹೊಂದುವುದರ ಅರ್ಥವೇನು?"],
+    "responses": ["ಮಾನಸಿಕ ಕಾಯಿಲೆಗಳು ವ್ಯಕ್ತಿಯ ಆಲೋಚನೆಗಳು, ಭಾವನೆಗಳು, ಸಂಬಂಧಗಳು ಮತ್ತು ದೈನಂದಿನ ಕಾರ್ಯಚಟುವಟಿಕೆಗಳನ್ನು ಅಡ್ಡಿಪಡಿಸುವ ಆರೋಗ್ಯ ಸ್ಥಿತಿಗಳಾಗಿವೆ. ಅವು ಯಾತನೆ ಮತ್ತು ದೈನಂದಿನ ಜೀವನದ ಸಾಮಾನ್ಯ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ತೊಡಗಿಸಿಕೊಳ್ಳುವ ಸಾಮರ್ಥ್ಯ ಕಡಿಮೆಯಾಗುತ್ತವೆ. ಮಾನಸಿಕ ಕಾಯಿಲೆಗಳು ತೀವ್ರತೆಯ ನಿರಂತರತೆಯ ಉದ್ದಕ್ಕೂ ಬೀಳುತ್ತವೆ: ಕೆಲವು ತಕ್ಕಮಟ್ಟಿಗೆ ಕೆಲವು ಫೋಬಿಯಾಗಳಂತಹ ಜೀವನದ ಕೆಲವು ಅಂಶಗಳೊಂದಿಗೆ ಸೌಮ್ಯವಾದ ಮತ್ತು ಕೇವಲ ಮಧ್ಯಪ್ರವೇಶಿಸುತ್ತದೆ.ವರ್ಣಪಟಲದ ಇನ್ನೊಂದು ತುದಿಯಲ್ಲಿ ಗಂಭೀರವಾದ ಮಾನಸಿಕ ಕಾಯಿಲೆಗಳು ಇರುತ್ತದೆ, ಇದು ಪ್ರಮುಖ ಕ್ರಿಯಾತ್ಮಕ ದುರ್ಬಲತೆ ಮತ್ತು ದೈನಂದಿನ ಜೀವನದಲ್ಲಿ ಹಸ್ತಕ್ಷೇಪಕ್ಕೆ ಕಾರಣವಾಗುತ್ತದೆ.ಇವು ಪ್ರಮುಖ ಖಿನ್ನತೆ, ಸ್ಕಿಜೋಫ್ರೇನಿಯಾ, ಮತ್ತು ಬೈಪೋಲಾರ್ ಡಿಸಾರ್ಡರ್, ಮತ್ತು ವ್ಯಕ್ತಿಯು ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಆರೈಕೆಯನ್ನು ಪಡೆಯಬೇಕಾಗಬಹುದು.ಮಾನಸಿಕ ಕಾಯಿಲೆಗಳು ವೈದ್ಯಕೀಯ ಪರಿಸ್ಥಿತಿಗಳು ಎಂದು ತಿಳಿದುಕೊಳ್ಳುವುದು ಮುಖ್ಯವಾಗಿದೆ, ಅದು ವ್ಯಕ್ತಿಯ ಸ್ವಭಾವ, ಬುದ್ಧಿವಂತಿಕೆ ಅಥವಾ ಇಚ್ಛಾಶಕ್ತಿಯೊಂದಿಗೆ ಯಾವುದೇ ಸಂಬಂಧವನ್ನು ಹೊಂದಿರುವುದಿಲ್ಲ.ಮಧುಮೇಹವು ಮೇದೋಜ್ಜೀರಕ ಗ್ರಂಥಿಯ ಅಸ್ವಸ್ಥತೆಯಂತೆಯೇ , ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯು ಮೆದುಳಿನ ಜೀವಶಾಸ್ತ್ರದ ಕಾರಣದಿಂದಾಗಿ ವೈದ್ಯಕೀಯ ಸ್ಥಿತಿಯಾಗಿದೆ.ಮಧುಮೇಹವನ್ನು ಔಷಧಿ ಮತ್ತು ಇನ್ಸುಲಿನ್‌ನೊಂದಿಗೆ ಹೇಗೆ ಚಿಕಿತ್ಸೆ ನೀಡಬಹುದು, ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯು ಔಷಧಿ ಮತ್ತು ಸಾಮಾಜಿಕ ಬೆಂಬಲದ ಸಂಯೋಜನೆಯೊಂದಿಗೆ ಚಿಕಿತ್ಸೆ ನೀಡಬಹುದು. ಈ ಚಿಕಿತ್ಸೆಗಳು ಹೆಚ್ಚು ಪರಿಣಾಮಕಾರಿಯಾಗಿವೆ, ಚಿಕಿತ್ಸೆ ಪಡೆಯುವ 70-90 ಪ್ರತಿಶತ ವ್ಯಕ್ತಿಗಳು ರೋಗಲಕ್ಷಣಗಳಲ್ಲಿ ಕಡಿತವನ್ನು ಅನುಭವಿಸುತ್ತಾರೆ ಮತ್ತು ಜೀವನದ ಗುಣಮಟ್ಟವನ್ನು ಸುಧಾರಿಸುತ್ತಾರೆ. ಸರಿಯಾದ ಚಿಕಿತ್ಸೆಯೊಂದಿಗೆ, ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆ ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಯು ಸ್ವತಂತ್ರ ಮತ್ತು ಯಶಸ್ವಿಯಾಗಲು ತುಂಬಾ ಸಾಧ್ಯ."],
+    "context": [""]
+    },
+    {"tag": "fact-118",
+    "patterns": ["ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಗೆ ಕಾರಣವೇನು?"],
+    "responses": ["ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯು ಅಮೆರಿಕಾದಲ್ಲಿ 5 ವಯಸ್ಕರಲ್ಲಿ 1 ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ ಮತ್ತು 24 ವಯಸ್ಕರಲ್ಲಿ 1 ಗಂಭೀರ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯನ್ನು ಹೊಂದಿದೆ ಎಂದು ಅಂದಾಜಿಸಲಾಗಿದೆ. ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯು ತಾರತಮ್ಯ ಮಾಡುವುದಿಲ್ಲ; ಇದು ಲಿಂಗ, ವಯಸ್ಸು, ಆದಾಯ, ಸಾಮಾಜಿಕ ಸ್ಥಾನಮಾನ, ಜನಾಂಗೀಯತೆ, ಧರ್ಮ, ಲೈಂಗಿಕ ದೃಷ್ಟಿಕೋನ ಅಥವಾ ಹಿನ್ನೆಲೆಯನ್ನು ಲೆಕ್ಕಿಸದೆ ಯಾರ ಮೇಲೂ ಪರಿಣಾಮ ಬೀರಬಹುದು. ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯು ಯಾರಿಗಾದರೂ ಪರಿಣಾಮ ಬೀರಬಹುದಾದರೂ, ಕೆಲವು ಪರಿಸ್ಥಿತಿಗಳು ವಿಭಿನ್ನ ಜನಸಂಖ್ಯೆಯಲ್ಲಿ ಹೆಚ್ಚು ಸಾಮಾನ್ಯವಾಗಬಹುದು. ಉದಾಹರಣೆಗೆ, ತಿನ್ನುವ ಅಸ್ವಸ್ಥತೆಗಳು ಮಹಿಳೆಯರಲ್ಲಿ ಹೆಚ್ಚಾಗಿ ಕಂಡುಬರುತ್ತವೆ, ಆದರೆ ಗಮನ ಕೊರತೆ / ಹೈಪರ್ಆಕ್ಟಿವಿಟಿ ಅಸ್ವಸ್ಥತೆಯಂತಹ ಅಸ್ವಸ್ಥತೆಗಳು ಮಕ್ಕಳಲ್ಲಿ ಹೆಚ್ಚು ಪ್ರಚಲಿತವಾಗಿದೆ. ಹೆಚ್ಚುವರಿಯಾಗಿ, ಎಲ್ಲಾ ವಯಸ್ಸಿನವರು ಒಳಗಾಗುತ್ತಾರೆ, ಆದರೆ ಯುವಕರು ಮತ್ತು ಹಿರಿಯರು ವಿಶೇಷವಾಗಿ ದುರ್ಬಲರಾಗಿದ್ದಾರೆ. ಮಾನಸಿಕ ಕಾಯಿಲೆಗಳು ಸಾಮಾನ್ಯವಾಗಿ ತಮ್ಮ ಜೀವನದ ಅವಿಭಾಜ್ಯದಲ್ಲಿ ವ್ಯಕ್ತಿಗಳನ್ನು ಹೊಡೆಯುತ್ತವೆ, 75 ಪ್ರತಿಶತದಷ್ಟು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಪರಿಸ್ಥಿತಿಗಳು 24 ನೇ ವಯಸ್ಸಿನಲ್ಲಿ ಬೆಳವಣಿಗೆಯಾಗುತ್ತವೆ. ಇದು ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಗಳ ಗುರುತಿಸುವಿಕೆ ಮತ್ತು ಚಿಕಿತ್ಸೆಯನ್ನು ವಿಶೇಷವಾಗಿ ಕಷ್ಟಕರವಾಗಿಸುತ್ತದೆ, ಏಕೆಂದರೆ ಹದಿಹರೆಯದ ಸಾಮಾನ್ಯ ವ್ಯಕ್ತಿತ್ವ ಮತ್ತು ನಡವಳಿಕೆಯ ಬದಲಾವಣೆಗಳು ರೋಗಲಕ್ಷಣಗಳನ್ನು ಮರೆಮಾಡಬಹುದು. ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸ್ಥಿತಿ. ಪೋಷಕರು ಮತ್ತು ಪಾಲಕರು ಈ ಸತ್ಯದ ಬಗ್ಗೆ ತಿಳಿದಿರಬೇಕು ಮತ್ತು ಅವರ ಮಗುವಿನ ಮನಸ್ಥಿತಿ, ವ್ಯಕ್ತಿತ್ವ, ವೈಯಕ್ತಿಕ ಅಭ್ಯಾಸಗಳು ಮತ್ತು ಸಾಮಾಜಿಕ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವಿಕೆಯಲ್ಲಿನ ಬದಲಾವಣೆಗಳನ್ನು ಗಮನಿಸಬೇಕು. ಇವುಗಳು 18 ವರ್ಷದೊಳಗಿನ ಮಕ್ಕಳಲ್ಲಿ ಸಂಭವಿಸಿದಾಗ, ಅವುಗಳನ್ನು ಗಂಭೀರ ಭಾವನಾತ್ಮಕ ಅಡಚಣೆಗಳು (SEDs) ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-191",
+    "patterns": ["ಮಾನಸಿಕ ಕಾಯಿಲೆ ಯಾರ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ?"],
+    "responses": ["ಮಾನಸಿಕ ಕಾಯಿಲೆಯು ಅಮೆರಿಕದಲ್ಲಿ 5 ವಯಸ್ಕರಲ್ಲಿ 1 ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ ಎಂದು ಅಂದಾಜಿಸಲಾಗಿದೆ, ಮತ್ತು 24 ವಯಸ್ಕರಲ್ಲಿ ಒಬ್ಬರಿಗೆ ಗಂಭೀರ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆ ಇದೆ. ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯು ತಾರತಮ್ಯ ಮಾಡುವುದಿಲ್ಲ; ಇದು ಲಿಂಗ, ವಯಸ್ಸು, ಆದಾಯ, ಸಾಮಾಜಿಕ ಸ್ಥಾನಮಾನ, ಜನಾಂಗೀಯತೆಯನ್ನು ಲೆಕ್ಕಿಸದೆ ಯಾರ ಮೇಲೂ ಪರಿಣಾಮ ಬೀರಬಹುದು. , ಧರ್ಮ, ಲೈಂಗಿಕ ದೃಷ್ಟಿಕೋನ, ಅಥವಾ ಹಿನ್ನೆಲೆ. ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯು ಯಾರ ಮೇಲೂ ಪರಿಣಾಮ ಬೀರಬಹುದಾದರೂ, ವಿಭಿನ್ನ ಜನಸಂಖ್ಯೆಯಲ್ಲಿ ಕೆಲವು ಪರಿಸ್ಥಿತಿಗಳು ಹೆಚ್ಚು ಸಾಮಾನ್ಯವಾಗಿರಬಹುದು. ಉದಾಹರಣೆಗೆ, ತಿನ್ನುವ ಅಸ್ವಸ್ಥತೆಗಳು ಮಹಿಳೆಯರಲ್ಲಿ ಹೆಚ್ಚಾಗಿ ಕಂಡುಬರುತ್ತವೆ, ಆದರೆ ಗಮನ ಕೊರತೆ / ಹೈಪರ್ಆಕ್ಟಿವಿಟಿ ಅಸ್ವಸ್ಥತೆಯಂತಹ ಅಸ್ವಸ್ಥತೆಗಳು ಹೆಚ್ಚು. ಮಕ್ಕಳಲ್ಲಿ ಪ್ರಚಲಿತವಾಗಿದೆ.ಹೆಚ್ಚುವರಿಯಾಗಿ, ಎಲ್ಲಾ ವಯೋಮಾನದವರು ಒಳಗಾಗುತ್ತಾರೆ, ಆದರೆ ಯುವಕರು ಮತ್ತು ಹಿರಿಯರು ವಿಶೇಷವಾಗಿ ದುರ್ಬಲರಾಗಿದ್ದಾರೆ.ಮಾನಸಿಕ ಕಾಯಿಲೆಗಳು ಸಾಮಾನ್ಯವಾಗಿ ವ್ಯಕ್ತಿಗಳನ್ನು ಅವರ ಜೀವನದ ಅವಿಭಾಜ್ಯದಲ್ಲಿ ಹೊಡೆಯುತ್ತವೆ, 75 ಪ್ರತಿಶತದಷ್ಟು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಪರಿಸ್ಥಿತಿಗಳು 24 ನೇ ವಯಸ್ಸಿನಲ್ಲಿ ಬೆಳವಣಿಗೆಯಾಗುತ್ತವೆ. ಇದು ಗುರುತಿಸುವಿಕೆಯನ್ನು ಮಾಡುತ್ತದೆ ಮತ್ತು ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಗಳ ಚಿಕಿತ್ಸೆಯು ವಿಶೇಷವಾಗಿ ಕಷ್ಟಕರವಾಗಿದೆ, ಏಕೆಂದರೆ ಹದಿಹರೆಯದ ಸಾಮಾನ್ಯ ವ್ಯಕ್ತಿತ್ವ ಮತ್ತು ನಡವಳಿಕೆಯ ಬದಲಾವಣೆಗಳು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸ್ಥಿತಿಯ ಲಕ್ಷಣಗಳನ್ನು ಮರೆಮಾಡಬಹುದು. ಪೋಷಕರು ಮತ್ತು ಪಾಲಕರು ಈ ಸತ್ಯದ ಬಗ್ಗೆ ತಿಳಿದಿರಬೇಕು ಮತ್ತು ಅವರ ಮಗುವಿನ ಮನಸ್ಥಿತಿ, ವ್ಯಕ್ತಿತ್ವ, ವೈಯಕ್ತಿಕ ಅಭ್ಯಾಸಗಳು ಮತ್ತು ಸಾಮಾಜಿಕ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವಿಕೆಯಲ್ಲಿನ ಬದಲಾವಣೆಗಳನ್ನು ಗಮನಿಸಬೇಕು. ಇವುಗಳು 18 ವರ್ಷದೊಳಗಿನ ಮಕ್ಕಳಲ್ಲಿ ಸಂಭವಿಸಿದಾಗ, ಅವುಗಳನ್ನು ಗಂಭೀರ ಭಾವನಾತ್ಮಕ ಅಡಚಣೆಗಳು (SEDs) ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-201",
+    "patterns": ["ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯ ಕೆಲವು ಎಚ್ಚರಿಕೆ ಚಿಹ್ನೆಗಳು ಯಾವುವು?"],
+    "responses": ["ಮಾನಸಿಕ ಆರೋಗ್ಯ ಅಸ್ವಸ್ಥತೆಗಳ ಲಕ್ಷಣಗಳು ಸ್ಥಿತಿಯ ಪ್ರಕಾರ ಮತ್ತು ತೀವ್ರತೆಯನ್ನು ಅವಲಂಬಿಸಿ ಬದಲಾಗುತ್ತವೆ. ಈ ಕೆಳಗಿನವು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಅಸ್ವಸ್ಥತೆಯನ್ನು ಸೂಚಿಸುವ ಸಾಮಾನ್ಯ ರೋಗಲಕ್ಷಣಗಳ ಪಟ್ಟಿಯಾಗಿದೆ, ವಿಶೇಷವಾಗಿ ಅನೇಕ ರೋಗಲಕ್ಷಣಗಳು ಏಕಕಾಲದಲ್ಲಿ ವ್ಯಕ್ತಪಡಿಸಿದಾಗ. \n ವಯಸ್ಕರಲ್ಲಿ:\n ಗೊಂದಲಮಯ ಚಿಂತನೆ\n ದೀರ್ಘಕಾಲೀನ ದುಃಖ ಅಥವಾ ಕಿರಿಕಿರಿ\n ಮನಸ್ಥಿತಿಯಲ್ಲಿ ವಿಪರೀತ ಏರಿಳಿತಗಳು\n ಅತಿಯಾದ ಭಯ, ಚಿಂತೆ, ಅಥವಾ ಆತಂಕ\n ಸಾಮಾಜಿಕ ಹಿಂತೆಗೆದುಕೊಳ್ಳುವಿಕೆ\n ಆಹಾರ ಅಥವಾ ಮಲಗುವ ಅಭ್ಯಾಸಗಳಲ್ಲಿ ನಾಟಕೀಯ ಬದಲಾವಣೆಗಳು\n ಬಲವಾದ ಕೋಪದ ಭಾವನೆಗಳು\n ಭ್ರಮೆಗಳು ಅಥವಾ ಭ್ರಮೆಗಳು (ನಿಜವಾಗಿ ಇಲ್ಲದ ವಿಷಯಗಳನ್ನು ನೋಡುವುದು ಅಥವಾ ಕೇಳುವುದು)\n ದೈನಂದಿನ ಸಮಸ್ಯೆಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಗಳನ್ನು ನಿಭಾಯಿಸಲು ಅಸಮರ್ಥತೆ ಹೆಚ್ಚುತ್ತಿದೆ\n ಆತ್ಮಹತ್ಯೆಯ ಆಲೋಚನೆಗಳು\n ಸ್ಪಷ್ಟ ಸಮಸ್ಯೆಗಳ ನಿರಾಕರಣೆ\n ಅನೇಕ ವಿವರಿಸಲಾಗದ ದೈಹಿಕ ಸಮಸ್ಯೆಗಳು\n ನಿಂದನೆ ಡ್ರಗ್ಸ್ ಮತ್ತು/ಅಥವಾ ಆಲ್ಕೋಹಾಲ್\n \n ಹಿರಿಯ ಮಕ್ಕಳು ಮತ್ತು ಹದಿಹರೆಯದವರಲ್ಲಿ:\n ಡ್ರಗ್ಸ್ ಮತ್ತು/ಅಥವಾ ಮದ್ಯದ ದುರುಪಯೋಗ\n ದೈನಂದಿನ ಸಮಸ್ಯೆಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಗಳನ್ನು ನಿಭಾಯಿಸಲು ಅಸಮರ್ಥತೆ\n ನಿದ್ರೆ ಮತ್ತು/ಅಥವಾ ಆಹಾರ ಪದ್ಧತಿಯಲ್ಲಿ ಬದಲಾವಣೆ\n ಅತಿಯಾದ ದೂರುಗಳು ದೈಹಿಕ ಸಮಸ್ಯೆಗಳ\n ಅಧಿಕಾರವನ್ನು ಧಿಕ್ಕರಿಸುವುದು, ಶಾಲೆಯನ್ನು ಬಿಡುವುದು, ಕದಿಯುವುದು ಅಥವಾ ಆಸ್ತಿಯನ್ನು ಹಾನಿಗೊಳಿಸುವುದು\n ತೂಕ ಹೆಚ್ಚಾಗುವ ತೀವ್ರ ಭಯ\n ದೀರ್ಘಕಾಲದ ನಕಾರಾತ್ಮಕ ಮನಸ್ಥಿತಿ, ಆಗಾಗ್ಗೆ ಕಳಪೆ ಹಸಿವು ಮತ್ತು ಸಾವಿನ ಆಲೋಚನೆಗಳೊಂದಿಗೆ\n ಆಗಾಗ್ಗೆ ಕೋಪದ ಪ್ರಕೋಪಗಳು\n \n ಕಿರಿಯ ಮಕ್ಕಳು:\n ಶಾಲೆಯ ಕಾರ್ಯಕ್ಷಮತೆಯಲ್ಲಿನ ಬದಲಾವಣೆಗಳು\n ಬಲವಾದ ಪ್ರಯತ್ನಗಳ ಹೊರತಾಗಿಯೂ ಕಳಪೆ ಶ್ರೇಣಿಗಳು\n ಅತಿಯಾದ ಚಿಂತೆ ಅಥವಾ ಆತಂಕ\n ಹೈಪರ್ಆಕ್ಟಿವಿಟಿ\n ನಿರಂತರ ದುಃಸ್ವಪ್ನಗಳು\n ನಿರಂತರ ಅಸಹಕಾರ ಮತ್ತು/ಅಥವಾ ಆಕ್ರಮಣಕಾರಿ ನಡವಳಿಕೆ\n ಆಗಾಗ್ಗೆ ಕೋಪದ ಕೋಪಗಳು"],
+    "context": [""]
+    },
+    {"tag": "fact-211",
+    "patterns": ["ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆ ಹೊಂದಿರುವ ಜನರು ಚೇತರಿಸಿಕೊಳ್ಳಬಹುದೇ?"],
+    "responses": ["ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯಿಂದ ಗುಣವಾಗುವಾಗ, ಆರಂಭಿಕ ಗುರುತಿಸುವಿಕೆ ಮತ್ತು ಚಿಕಿತ್ಸೆಯು ಪ್ರಮುಖ ಪ್ರಾಮುಖ್ಯತೆಯನ್ನು ಹೊಂದಿದೆ. ರೋಗದ ಸ್ವರೂಪವನ್ನು ಆಧರಿಸಿ, ಹಲವಾರು ಪರಿಣಾಮಕಾರಿ ಚಿಕಿತ್ಸೆಗಳು ಲಭ್ಯವಿದೆ. ಯಾವುದೇ ರೀತಿಯ ಚಿಕಿತ್ಸೆಗಾಗಿ, ಬಾಧಿತ ವ್ಯಕ್ತಿಯು ಪೂರ್ವಭಾವಿಯಾಗಿ ಮತ್ತು ತಮ್ಮದೇ ಆದ ಚೇತರಿಕೆಯ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಸಂಪೂರ್ಣವಾಗಿ ತೊಡಗಿಸಿಕೊಂಡಿರುವುದು ಅತ್ಯಗತ್ಯ. ರೋಗನಿರ್ಣಯ ಮತ್ತು ಚಿಕಿತ್ಸೆ ಪಡೆದ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಗಳೊಂದಿಗಿನ ಅನೇಕ ಜನರು ಉತ್ತಮವಾಗಿ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತಾರೆ, ಆದರೂ ಕೆಲವರು ರೋಗಲಕ್ಷಣಗಳ ಮರಳುವಿಕೆಯನ್ನು ಅನುಭವಿಸಬಹುದು. ಅಂತಹ ಸಂದರ್ಭಗಳಲ್ಲಿ ಸಹ, ಅಸ್ವಸ್ಥತೆಯ ಎಚ್ಚರಿಕೆಯ ಮೇಲ್ವಿಚಾರಣೆ ಮತ್ತು ನಿರ್ವಹಣೆಯೊಂದಿಗೆ, ಪೂರೈಸಿದ ಮತ್ತು ಉತ್ಪಾದಕ ಜೀವನವನ್ನು ನಡೆಸಲು ಇನ್ನೂ ಸಾಕಷ್ಟು ಸಾಧ್ಯವಿದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-221",
+    "patterns": ["ವಿವಿಧ ರೀತಿಯ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಗಳು ಯಾವುವು", "ವಿವಿಧ ವರ್ಗಗಳ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಗಳನ್ನು ಎಣಿಸಿ", "ವಿವಿಧ ರೀತಿಯ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ", "ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಗಳ ವಿಭಿನ್ನ ವರ್ಗಗಳು"],
+    "responses": ["ಖಿನ್ನತೆ, ಆತಂಕದ ಅಸ್ವಸ್ಥತೆಗಳು, ಬೈಪೋಲಾರ್ ಡಿಸಾರ್ಡರ್, ಸ್ಕಿಜೋಫ್ರೇನಿಯಾ, ಪೋಸ್ಟ್-ಟ್ರಾಮಾಟಿಕ್ ಸ್ಟ್ರೆಸ್ ಡಿಸಾರ್ಡರ್ (PTSD), ತಿನ್ನುವ ಅಸ್ವಸ್ಥತೆಗಳು"],
+    "context": [""]
+    },
+    {"tag": "fact-231",
+    "patterns": ["ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯ ಲಕ್ಷಣಗಳನ್ನು ಹೊಂದಿರುವ ಯಾರಾದರೂ ನನಗೆ ತಿಳಿದಿದ್ದರೆ ನಾನು ಏನು ಮಾಡಬೇಕು?"],
+    "responses": ["ಪಂಡೋರಾ ವೃತ್ತಿಪರ ಸಲಹೆಯನ್ನು ಬದಲಿಸಲು ಸಾಧ್ಯವಿಲ್ಲವಾದರೂ, ರೋಗಲಕ್ಷಣಗಳನ್ನು ಹೊಂದಿರುವವರು ತಮ್ಮ ಸ್ನೇಹಿತರು ಮತ್ತು ಕುಟುಂಬ ಸದಸ್ಯರೊಂದಿಗೆ ಮಾತನಾಡಲು ಮತ್ತು ಮಾನಸಿಕ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರ ಸಲಹೆಯನ್ನು ಪಡೆಯಲು ನಾವು ಪ್ರೋತ್ಸಾಹಿಸುತ್ತೇವೆ. ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಸ್ಥಿತಿಯನ್ನು ಎಷ್ಟು ಬೇಗ ಗುರುತಿಸಿ ಚಿಕಿತ್ಸೆ ನೀಡುತ್ತದೋ ಅಷ್ಟು ಬೇಗ ಅವರು ಚೇತರಿಸಿಕೊಳ್ಳುವ ಹಾದಿಯನ್ನು ಪಡೆಯಬಹುದು. ಸಮಸ್ಯೆಗಳನ್ನು ಹೊಂದಿರುವ ಯಾರಾದರೂ ನಿಮಗೆ ತಿಳಿದಿದ್ದರೆ, ಸಮಸ್ಯೆಯು ಸ್ವತಃ ಪರಿಹರಿಸುತ್ತದೆ ಎಂದು ಭಾವಿಸಬೇಡಿ. ನೀವು ಅವರ ಬಗ್ಗೆ ಕಾಳಜಿ ವಹಿಸುತ್ತೀರಿ ಮತ್ತು ಅವುಗಳನ್ನು ಸರಿಪಡಿಸಲು ಸಹಾಯ ಮಾಡುವ ಚಿಕಿತ್ಸಾ ಆಯ್ಕೆಗಳು ಲಭ್ಯವಿದೆ ಎಂದು ಅವರಿಗೆ ತಿಳಿಸಿ. ನಿಮ್ಮ ಸ್ನೇಹಿತ ಅಥವಾ ಕುಟುಂಬದ ಸದಸ್ಯರು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸ್ಥಿತಿಯ ಲಕ್ಷಣಗಳನ್ನು ಅನುಭವಿಸುತ್ತಿದ್ದಾರೆ ಎಂದು ನೀವು ಭಾವಿಸಿದರೆ ಮಾನಸಿಕ ಆರೋಗ್ಯ ವೃತ್ತಿಪರರು ಅಥವಾ ಸಲಹೆಗಾರರೊಂದಿಗೆ ಮಾತನಾಡಿ. ಪೀಡಿತ ಪ್ರೀತಿಪಾತ್ರರಿಗೆ ನೀವು ಅವರನ್ನು ಬೆಂಬಲಿಸುತ್ತೀರಿ ಎಂದು ತಿಳಿದಿದ್ದರೆ, ಅವರು ಸಹಾಯವನ್ನು ಹುಡುಕುವ ಸಾಧ್ಯತೆ ಹೆಚ್ಚು."],
+    "context": [""]
+    },
+    {"tag": "fact-241",
+    "patterns": ["ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸಮಸ್ಯೆಗಳಿಗೆ ಕಾರಣವೇನು?"],
+    "responses": ["ನಿಮ್ಮ ಮಾನಸಿಕ ಆರೋಗ್ಯದೊಂದಿಗಿನ ಸವಾಲುಗಳು ಅಥವಾ ಸಮಸ್ಯೆಗಳು ಮಾನಸಿಕ, ಜೈವಿಕ ಮತ್ತು ಸಾಮಾಜಿಕ, ಸಮಸ್ಯೆಗಳು ಮತ್ತು ಜೀವನದ ಘಟನೆಗಳಿಂದ ಉದ್ಭವಿಸಬಹುದು."],
+    "context": [""]
+    },
+    {"tag": "fact-251",
+    "patterns": ["ನೀವು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸಮಸ್ಯೆಗಳನ್ನು ತಡೆಯಬಹುದೇ?"],
+    "responses": ["ನಾವೆಲ್ಲರೂ ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಸವಾಲುಗಳಿಂದ ಬಳಲಬಹುದು, ಆದರೆ ನಮ್ಮ ಯೋಗಕ್ಷೇಮ, ಸ್ಥಿತಿಸ್ಥಾಪಕತ್ವವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು ಮತ್ತು ಆರಂಭಿಕ ಸಹಾಯವನ್ನು ಪಡೆಯುವುದು ಸವಾಲುಗಳು ಗಂಭೀರವಾಗುವುದನ್ನು ತಡೆಯಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-261",
+    "patterns": ["ನನ್ನ ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ನಾನು ಚಿಂತೆ ಮಾಡುತ್ತಿದ್ದರೆ ನಾನು ಏನು ಮಾಡಬೇಕು?"],
+    "responses": ["ನೀವು ನಂಬುವ ವ್ಯಕ್ತಿಯೊಂದಿಗೆ ಮಾತನಾಡುವುದು ಅತ್ಯಂತ ಮುಖ್ಯವಾದ ವಿಷಯ. ಇದು ಸ್ನೇಹಿತ, ಸಹೋದ್ಯೋಗಿ, ಕುಟುಂಬದ ಸದಸ್ಯರು ಅಥವಾ GP ಆಗಿರಬಹುದು. ಯಾರೊಂದಿಗಾದರೂ ಮಾತನಾಡುವುದರ ಜೊತೆಗೆ, ನೀವು ಏನನ್ನು ಅನುಭವಿಸುತ್ತಿದ್ದೀರಿ ಎಂಬುದರ ಕುರಿತು ಹೆಚ್ಚಿನ ಮಾಹಿತಿಯನ್ನು ಕಂಡುಹಿಡಿಯಲು ಇದು ಉಪಯುಕ್ತವಾಗಬಹುದು. ಈ ವಿಷಯಗಳು ನೀವು ಏನನ್ನು ಅನುಭವಿಸುತ್ತಿದ್ದೀರಿ ಎಂಬುದರ ಕುರಿತು ಸ್ವಲ್ಪ ದೃಷ್ಟಿಕೋನವನ್ನು ಪಡೆಯಲು ಸಹಾಯ ಮಾಡಬಹುದು ಮತ್ತು ಸಹಾಯವನ್ನು ಪಡೆಯುವ ಪ್ರಾರಂಭವಾಗಿದೆ."],
+    "context": [""]
+    },
+    {"tag": "fact-271",
+    "patterns": ["ಮಾನಸಿಕ ಆರೋಗ್ಯ ಚಿಕಿತ್ಸೆಯ ವಿಧಗಳ ಬಗ್ಗೆ ನಾನು ಎಲ್ಲಿ ಕಲಿಯಬಹುದು?"],
+    "responses": ["ಮಾನಸಿಕ ಆರೋಗ್ಯ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ಔಷಧಿ, ಚಿಕಿತ್ಸೆ ಅಥವಾ ಎರಡರ ಸಂಯೋಜನೆಯೊಂದಿಗೆ ಚಿಕಿತ್ಸೆ ನೀಡಲಾಗುತ್ತದೆ. ಆದಾಗ್ಯೂ, ಪೂರಕ ಮತ್ತು ಪರ್ಯಾಯ ಚಿಕಿತ್ಸೆಗಳು, ಸ್ವ-ಸಹಾಯ ಯೋಜನೆಗಳು ಮತ್ತು ಪೀರ್ ಬೆಂಬಲ ಸೇರಿದಂತೆ ಹಲವು ವಿಭಿನ್ನ ರೀತಿಯ ಚಿಕಿತ್ಸೆಗಳು ಲಭ್ಯವಿವೆ. ಚಿಕಿತ್ಸೆಗಳು ತುಂಬಾ ವೈಯಕ್ತಿಕವಾಗಿವೆ ಮತ್ತು ಮಾಡಬೇಕು ಮಾನಸಿಕ ಆರೋಗ್ಯ ಪರಿಸ್ಥಿತಿಗಳಿರುವ ವ್ಯಕ್ತಿ ಮತ್ತು ಅವನ ಅಥವಾ ಅವಳ ತಂಡದಿಂದ ಚರ್ಚಿಸಲಾಗುವುದು."],
+    "context": [""]
+    },
+    {"tag": "sleep1",
+        "patterns": ["ನನಗೆ ನಿದ್ರಾಹೀನತೆ ಇದೆ", "ನಾನು ನಿದ್ರಾಹೀನತೆಯಿಂದ ಬಳಲುತ್ತಿದ್ದೇನೆ", "ನನಗೆ ನಿದ್ರೆ ಬರುತ್ತಿಲ್ಲ.", "ಕಳೆದ ದಿನಗಳಿಂದ ನಾನು ನಿದ್ದೆ ಮಾಡಿಲ್ಲ.", "ನನಗೆ ನಿದ್ದೆ ಮಾಡಲು ಆಗುತ್ತಿಲ್ಲ.", "ಕಳೆದ ಕೆಲವು ದಿನಗಳಿಂದ ನನಗೆ ಸರಿಯಾಗಿ ನಿದ್ದೆ ಬರುತ್ತಿಲ್ಲ."],
+        "responses": ["ಇದರ ಹಿಂದಿನ ಕಾರಣ ಏನು ಎಂದು ನೀವು ಯೋಚಿಸುತ್ತೀರಿ?", "ಅದು ಭೀಕರವಾಗಿ ತೋರುತ್ತದೆ, ಇದರ ಹಿಂದೆ ಏನು ಇದೆ ಎಂದು ನೀವು ಯೋಚಿಸುತ್ತೀರಿ?"],
+        "context": [""]
+    },
+    {"tag": "scared1",
+        "patterns": ["ನನಗೆ ಭಯವಾಗಿದೆ", "ಅದು ಭೀಕರವಾಗಿದೆ. ನಾನು ಏನು ಮಾಡಬೇಕು?", "ಇಲ್ಲ ನಾನು ಈ ರೀತಿ ಭಾವಿಸಲು ಬಯಸುವುದಿಲ್ಲ", "ನಾನು ನನ್ನ ಬಗ್ಗೆ ಹೆದರುತ್ತೇನೆ"],
+        "responses": ["ಹೀಗೆ ಅನಿಸುವುದು ಸಹಜ. ನಾನು ನಿನಗಾಗಿ ಇದ್ದೇನೆ.", "ಎಲ್ಲಾ ಸರಿಯಾಗುತ್ತೆ. ಈ ಭಾವನೆ ಕೇವಲ ಕ್ಷಣಿಕ.", "ನಿಮಗೆ ಹೇಗೆ ಅನಿಸುತ್ತಿದೆ ಎಂದು ನನಗೆ ಅರ್ಥವಾಗಿದೆ. ಅದರ ಕಾರಣದಿಂದ ನಿಮ್ಮನ್ನು ಕೆಳಗಿಳಿಸಬೇಡಿ."],
+        "context": [""]
+    },
+    {"tag": "death1",
+        "patterns": ["ನನ್ನ ತಾಯಿ ಸತ್ತರು", "ನನ್ನ ಸಹೋದರ ನಿಧನರಾದರು", "ನನ್ನ ತಂದೆ ನಿಧನರಾದರು", "ನನ್ನ ಸಹೋದರಿ ನಿಧನರಾದರು", "ನನ್ನ ಕುಟುಂಬದಲ್ಲಿ ಯಾರಾದರೂ ಸತ್ತರು", "ನನ್ನ ಸ್ನೇಹಿತ ತೀರಿಕೊಂಡ"],
+        "responses": ["ಅದನ್ನು ಕೇಳಲು ನನಗೆ ಕ್ಷಮಿಸಿ. ನೀವು ಅದರ ಬಗ್ಗೆ ಮಾತನಾಡಲು ಬಯಸಿದರೆ. ನಾನು ಇಲ್ಲಿದ್ದೇನೆ.", "ಅದನ್ನು ಕೇಳಲು ನಾನು ನಿಜವಾಗಿಯೂ ವಿಷಾದಿಸುತ್ತೇನೆ. ದುಃಖ, ಆತಂಕ ಮತ್ತು ನೀವು ಅನುಭವಿಸಬಹುದಾದ ಯಾವುದನ್ನಾದರೂ ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನಾನು ಇಲ್ಲಿದ್ದೇನೆ. ಈ ಸಮಯದಲ್ಲಿ.", "ನನ್ನ ಸಂತಾಪಗಳು. ನೀವು ಮಾತನಾಡಬೇಕಾದರೆ ನಾನು ಇಲ್ಲಿದ್ದೇನೆ."],
+        "context": [""]
+    },
+    {"tag": "suicide1",
+        "patterns": ["ನಾನು ನನ್ನನ್ನು ಕೊಲ್ಲಲು ಬಯಸುತ್ತೇನೆ", "ನನ್ನನ್ನು ಕೊಲ್ಲುವ ಬಗ್ಗೆ ನಾನು ಯೋಚಿಸಿದೆ.", "ನಾನು ಸಾಯಲು ಬಯಸುತ್ತೇನೆ", "ನಾನು ನನ್ನನ್ನು ಕೊಲ್ಲಲು ಹೋಗುತ್ತಿದ್ದೇನೆ", "ನಾನು ಆತ್ಮಹತ್ಯೆ ಮಾಡಿಕೊಳ್ಳಲಿದ್ದೇನೆ"],
+        "responses": ["ಅದನ್ನು ಕೇಳಲು ನನಗೆ ತುಂಬಾ ವಿಷಾದವಿದೆ ಆದರೆ ನೀವು ಎದುರುನೋಡಲು ತುಂಬಾ ಇದೆ. ದಯವಿಟ್ಟು ಸಂಪರ್ಕಿಸುವ ಮೂಲಕ ಸಹಾಯವನ್ನು ಪಡೆಯಿರಿ: 9152987821."],
+        "context": [""]
+    },
+    {"tag": "hate-you1",
+        "patterns": ["ನಾನು ನಿನ್ನನ್ನು ದ್ವೇಷಿಸುತ್ತೇನೆ", "ನಾನು ನಿನ್ನನ್ನು ಇಷ್ಟಪಡುವುದಿಲ್ಲ", "ನಾನು ನಿನ್ನನ್ನು ನಂಬುವುದಿಲ್ಲ"],
+        "responses": ["ನಾನು ಹೇಗಾದರೂ ನಿಮಗೆ ಮನನೊಂದಿದ್ದರೆ ಕ್ಷಮಿಸಿ. ನಾನು ಸಹಾಯ ಮಾಡಲು ಮಾತ್ರ ಇಲ್ಲಿದ್ದೇನೆ", "ನಿನ್ನನ್ನು ಅಪರಾಧ ಮಾಡಲು ನಾನು ಏನಾದರೂ ಮಾಡಿದ್ದರೆ ನನ್ನನ್ನು ಕ್ಷಮಿಸಿ. ನಾನು ಸಹಾಯ ಮಾಡಲು ಮಾತ್ರ ಬಯಸುತ್ತೇನೆ"],
+        "context": [""]
+    },
+    {"tag": "something-else1",
+        "patterns": ["ನಾನು ಬೇರೆ ಯಾವುದನ್ನಾದರೂ ಮಾತನಾಡಲು ಬಯಸುತ್ತೇನೆ", "ಬೇರೆ ಯಾವುದನ್ನಾದರೂ ಮಾತನಾಡೋಣ.", "ನಾವು ಈ ಬಗ್ಗೆ ಮಾತನಾಡಬಾರದು?", "ನಾನು ಈ ಬಗ್ಗೆ ಮಾತನಾಡಲು ಬಯಸುವುದಿಲ್ಲ."],
+        "responses": ["ಸರಿ ಖಂಡಿತ. ನೀವು ಏನು ಮಾತನಾಡಲು ಬಯಸುತ್ತೀರಿ?", "ಸರಿ ತೊಂದರೆ ಇಲ್ಲ. ನೀವು ಏನಾದರೂ ಮಾತನಾಡಲು ಬಯಸುತ್ತೀರಾ?", "ನೀವು ಮಾತನಾಡಲು ಬಯಸುವ ಬೇರೆ ಏನಾದರೂ ಇದೆಯೇ?"],
+        "context": [""]
+    },
+    {"tag": "no-approach1",
+        "patterns": ["ನಾನು ಊಹೆ ಇಲ್ಲ. ನನ್ನ ಪರೀಕ್ಷೆಗಳ ಬಗ್ಗೆ ನಾನು ಯೋಚಿಸಬಲ್ಲೆ.", "ನಿಜವಾಗಿಯೂ ಅಲ್ಲ", "ನಾನು ಊಹಿಸುವುದಿಲ್ಲ"],
+        "responses": ["ಅದು ತೊಂದರೆಯಿಲ್ಲ. ನೀವು ಅದರ ಬಗ್ಗೆ ಏಕೆ ಒತ್ತಡಕ್ಕೊಳಗಾಗುತ್ತೀರಿ ಎಂದು ನಾನು ನೋಡುತ್ತೇನೆ. ಈ ಸಮಸ್ಯೆಯನ್ನು ನಿವಾರಿಸಲು ನಾನು ನಿಮಗೆ ಕೆಲವು ಸಲಹೆಗಳನ್ನು ನೀಡಬಲ್ಲೆ. ನೀವು ಅದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸುವಿರಾ?"],
+        "context": [""]
+    },
+    {"tag": "learn-more1",
+        "patterns": ["ಸರಿ ಖಚಿತ. ನಾನು ಅದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸುತ್ತೇನೆ.", "ಹೌದು, ನಾನು ಅದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸುತ್ತೇನೆ.", "ನಾನು ಅದರ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸುತ್ತೇನೆ."],
+        "responses": ["ಆದ್ದರಿಂದ ಮೊದಲು ನಾನು ನಿಮಗೆ ವಿರಾಮ ನೀಡುವಂತೆ ಸಲಹೆ ನೀಡುತ್ತೇನೆ. ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ ಹೆಚ್ಚು ಹೆಚ್ಚು ಯೋಚಿಸುವುದು ಖಂಡಿತವಾಗಿಯೂ ಅದನ್ನು ಪರಿಹರಿಸುವಲ್ಲಿ ಸಹಾಯ ಮಾಡುವುದಿಲ್ಲ. ನೀವು ನಿಮ್ಮನ್ನು ಅಗಾಧಗೊಳಿಸುತ್ತೀರಿ."],
+        "context": [""]
+    },
+    {"tag": "meditation1",
+        "patterns": ["ಹೂಂ, ಅದು ನನಗೆ ಉಪಯುಕ್ತವಾಗಬಹುದು.", "ಅದು ಉಪಯುಕ್ತವಾಗಿದೆ."],
+        "responses": ["ನಿಮ್ಮ ಎಲ್ಲಾ ಗಮನವನ್ನು ನಿಮ್ಮ ಉಸಿರಾಟದ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸಿ. ನಿಮ್ಮ ಮೂಗಿನ ಹೊಳ್ಳೆಗಳ ಮೂಲಕ ನೀವು ಉಸಿರಾಡುವಾಗ ಮತ್ತು ಬಿಡುವಾಗ ಭಾವನೆ ಮತ್ತು ಆಲಿಸುವಿಕೆಯ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸಿ. ಆಳವಾಗಿ ಮತ್ತು ನಿಧಾನವಾಗಿ ಉಸಿರಾಡಿ. ನಿಮ್ಮ ಗಮನವು ಅಲೆದಾಡಿದಾಗ, ನಿಧಾನವಾಗಿ ನಿಮ್ಮ ಗಮನವನ್ನು ನಿಮ್ಮ ಉಸಿರಾಟದ ಕಡೆಗೆ ಹಿಂತಿರುಗಿ."],
+        "context": [""]
+    },
+    {"tag": "user-meditation1",
+        "patterns": ["ನೀವು ಹೇಳಿದ್ದನ್ನು ನಾನು ಮಾಡಿದ್ದೇನೆ ಮತ್ತು ನಾನು ತುಂಬಾ ಉತ್ತಮವಾಗಿದ್ದೇನೆ. ತುಂಬಾ ಧನ್ಯವಾದಗಳು.", "ನಾನು ಈಗ ಉತ್ತಮವಾಗಿದ್ದೇನೆ"],
+        "responses": ["ನಿಮ್ಮ ಸ್ವಾಗತ. ನೆನಪಿಡಿ: ಯಾವಾಗಲೂ ನಿಮ್ಮ ನಿಯಂತ್ರಣದಲ್ಲಿರುವುದನ್ನು ಕೇಂದ್ರೀಕರಿಸಿ. ನೀವು ಚಿಂತಿಸುತ್ತಿರುವಾಗ, ನೀವು ನಿಯಂತ್ರಣ ಹೊಂದಿರುವ ವಿಷಯಗಳನ್ನು ಪರೀಕ್ಷಿಸಲು ಒಂದು ನಿಮಿಷ ತೆಗೆದುಕೊಳ್ಳಿ. ಚಂಡಮಾರುತ ಬರದಂತೆ ತಡೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ ಆದರೆ ಅದಕ್ಕೆ ತಯಾರಾಗಬಹುದು. ಬೇರೊಬ್ಬರು ಹೇಗೆ ವರ್ತಿಸುತ್ತಾರೆ ಎಂಬುದನ್ನು ನೀವು ನಿಯಂತ್ರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ, ಆದರೆ ನೀವು ಹೇಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತೀರಿ ಎಂಬುದನ್ನು ನೀವು ನಿಯಂತ್ರಿಸಬಹುದು. ಕೆಲವೊಮ್ಮೆ, ನೀವು ನಿಯಂತ್ರಿಸಬಹುದಾದ ಎಲ್ಲಾ ನಿಮ್ಮ ಪ್ರಯತ್ನ ಮತ್ತು ನಿಮ್ಮ ವರ್ತನೆ ಎಂದು ಗುರುತಿಸಿ. ನೀವು ನಿಯಂತ್ರಿಸಬಹುದಾದ ವಿಷಯಗಳಲ್ಲಿ ನಿಮ್ಮ ಶಕ್ತಿಯನ್ನು ಹಾಕಿದಾಗ, ನೀವು ಹೆಚ್ಚು ಪರಿಣಾಮಕಾರಿಯಾಗಿರುತ್ತೀರಿ."],
+        "context": [""]
+    },
+    {"tag": "user-advice1",
+        "patterns": ["ನನಗೆ ಸ್ವಲ್ಪ ಸಲಹೆ ಬೇಕು.", "ನನಗೆ ಸ್ವಲ್ಪ ಸಲಹೆ ಬೇಕು.", "ನನಗೆ ಏನಾದರೂ ಸಲಹೆ ಬೇಕು"],
+        "responses": ["ಖಂಡಿತ. ಸಹಾಯ ಮಾಡಲು ನಾನು ಏನು ಮಾಡಬಹುದು?", "ಸರಿ ನಿಮಗೆ ಏನು ಸಲಹೆ ಬೇಕು?"],
+        "context": [""]
+    },
+    {"tag": "mental-health-fact1",
+        "patterns": ["ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ಒಂದು ಸತ್ಯವನ್ನು ಹೇಳು", "ಮಾನಸಿಕ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ಇನ್ನೊಂದು ಸಂಗತಿಯನ್ನು ಹೇಳಿ"],
+        "responses": ["UNICEF ವರದಿಯ ಪ್ರಕಾರ, 15-24 ವರ್ಷ ವಯಸ್ಸಿನ ಏಳು ಭಾರತೀಯರಲ್ಲಿ ಒಬ್ಬರು ಖಿನ್ನತೆಗೆ ಒಳಗಾಗುತ್ತಾರೆ.", "5 ರಲ್ಲಿ 1 ಯುವಕರು (13-18 ವರ್ಷ ವಯಸ್ಸಿನವರು) ತಮ್ಮ ಜೀವಿತಾವಧಿಯಲ್ಲಿ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯನ್ನು ಹೊಂದಿದ್ದಾರೆ ಅಥವಾ ಅಭಿವೃದ್ಧಿಪಡಿಸುತ್ತಾರೆ.", "ಖಿನ್ನತೆಯು ವಿಶ್ವಾದ್ಯಂತ ಅಂಗವೈಕಲ್ಯಕ್ಕೆ ಪ್ರಮುಖ ಕಾರಣವಾಗಿದೆ."],
+        "context": [""]
+    },
+    {"tag": "fact-281",
+        "patterns": ["ಚಿಕಿತ್ಸಕ ಎಂದರೇನು?", "ಚಿಕಿತ್ಸಕ ಏನು ಮಾಡುತ್ತಾನೆ?", "ಚಿಕಿತ್ಸಕ ಎಂದರೆ?", "ಚಿಕಿತ್ಸಕ?"],
+        "responses": ["ಚಿಕಿತ್ಸಕನು ಚಿಕಿತ್ಸೆ ಮತ್ತು ಪುನರ್ವಸತಿ ಒದಗಿಸಲು ತರಬೇತಿ ಪಡೆದ ವೃತ್ತಿಪರರನ್ನು ಉಲ್ಲೇಖಿಸುವ ವಿಶಾಲವಾದ ಪದನಾಮವಾಗಿದೆ. ಈ ಪದವನ್ನು ಮನೋವಿಜ್ಞಾನಿಗಳಿಗೆ ಹೆಚ್ಚಾಗಿ ಅನ್ವಯಿಸಲಾಗುತ್ತದೆ, ಆದರೆ ಇದು ಸಾಮಾಜಿಕ ಕಾರ್ಯಕರ್ತರು, ಸಲಹೆಗಾರರು, ಜೀವನ ತರಬೇತುದಾರರು ಮತ್ತು ಇತರ ಅನೇಕ ಸೇವೆಗಳನ್ನು ಒದಗಿಸುವ ಇತರರನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ. "],
+        "context": [""]
+    },
+    {"tag": "fact-291",
+        "patterns": ["ಚಿಕಿತ್ಸೆ ಎಂದರೇನು?", "ನನಗೆ ಚಿಕಿತ್ಸೆ ಬೇಕೇ?", "ಯಾರಿಗೆ ಚಿಕಿತ್ಸೆ?"],
+        "responses": ["ಚಿಕಿತ್ಸೆಯು ಮಾನಸಿಕ ಅಥವಾ ಭಾವನಾತ್ಮಕ ಸಮಸ್ಯೆಗಳನ್ನು ಪರಿಹರಿಸಲು ಸಹಾಯ ಮಾಡುವ ಚಿಕಿತ್ಸೆಯ ಒಂದು ರೂಪವಾಗಿದೆ.", "ಚಿಕಿತ್ಸೆಯು ಮಾನಸಿಕ ಅಥವಾ ಭಾವನಾತ್ಮಕ ಸಮಸ್ಯೆಗಳನ್ನು ಪರಿಹರಿಸಲು ಸಹಾಯ ಮಾಡುವ ಚಿಕಿತ್ಸೆಯ ಒಂದು ರೂಪವಾಗಿದೆ. ಮಾನಸಿಕ ಆರೋಗ್ಯ ಪರಿಸ್ಥಿತಿಗಳು ಅಥವಾ ದೈನಂದಿನ ಜೀವನದ ಸವಾಲುಗಳನ್ನು ಹೊಂದಿರುವವರಿಗೆ ಇದು ಸಹಾಯಕವಾಗಿದೆ."],
+        "context": [""]
+    },
+    {"tag": "fact-301",
+        "patterns": ["ಯಾವ ಚಿಕಿತ್ಸಾ ಆಯ್ಕೆಗಳು ಲಭ್ಯವಿದೆ?"],
+        "responses": ["ದೈಹಿಕ ಕಾಯಿಲೆಗೆ ವಿವಿಧ ರೀತಿಯ ಔಷಧಿಗಳಿರುವಂತೆ, ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆ ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಗಳಿಗೆ ವಿಭಿನ್ನ ಚಿಕಿತ್ಸಾ ಆಯ್ಕೆಗಳು ಲಭ್ಯವಿದೆ. ವಿಭಿನ್ನ ಜನರಿಗೆ ಚಿಕಿತ್ಸೆಯು ವಿಭಿನ್ನವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ. ನಿಮಗೆ ಅಥವಾ ನಿಮ್ಮ ಮಗುವಿಗೆ ಯಾವುದು ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ಕಂಡುಹಿಡಿಯುವುದು ಮುಖ್ಯವಾಗಿದೆ."],
+        "context": [""]
+    },
+    {"tag": "fact-311",
+        "patterns": ["ನಾನು ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ತೊಡಗಿಸಿಕೊಂಡರೆ, ನಾನು ಏನು ತಿಳಿದುಕೊಳ್ಳಬೇಕು?"],
+        "responses": ["ಚಿಕಿತ್ಸೆಯನ್ನು ಪ್ರಾರಂಭಿಸುವುದು ವ್ಯಕ್ತಿಗಳು ಮತ್ತು ಕುಟುಂಬಗಳಿಗೆ ಒಂದು ದೊಡ್ಡ ಹೆಜ್ಜೆಯಾಗಿರುವುದರಿಂದ, ಇದು ತುಂಬಾ ಅಗಾಧವಾಗಿರಬಹುದು. ಚಿಕಿತ್ಸೆಯ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಸಾಧ್ಯವಾದಷ್ಟು ತೊಡಗಿಸಿಕೊಳ್ಳುವುದು ಮತ್ತು ತೊಡಗಿಸಿಕೊಳ್ಳುವುದು ಮುಖ್ಯವಾಗಿದೆ. ನೀವು ಉತ್ತರಿಸಬೇಕಾದ ಕೆಲವು ಪ್ರಶ್ನೆಗಳು ಸೇರಿವೆ:\n ಈ ನಿರ್ದಿಷ್ಟ ಅನಾರೋಗ್ಯದ ಕಾರಣದ ಬಗ್ಗೆ ಏನು ತಿಳಿದಿದೆ?\n ಈ ರೋಗಲಕ್ಷಣಗಳು ಸಾಮಾನ್ಯವಾಗಿ ಕಂಡುಬರುವ ಇತರ ರೋಗನಿರ್ಣಯಗಳು ಇವೆಯೇ?\n ನೀವು ಸಾಮಾನ್ಯವಾಗಿ ದೈಹಿಕ ಅಥವಾ ನರವೈಜ್ಞಾನಿಕ ಪರೀಕ್ಷೆಯನ್ನು ಸೇರಿಸುತ್ತೀರಾ?\n ಈ ಹಂತದಲ್ಲಿ ನೀವು ಶಿಫಾರಸು ಮಾಡುವ ಯಾವುದೇ ಹೆಚ್ಚುವರಿ ಪರೀಕ್ಷೆಗಳು ಅಥವಾ ಪರೀಕ್ಷೆಗಳಿವೆಯೇ?\n ಈ ಹಂತದಲ್ಲಿ ನೀವು ಇನ್ನೊಬ್ಬ ಮನೋವೈದ್ಯರಿಂದ ಸ್ವತಂತ್ರ ಅಭಿಪ್ರಾಯವನ್ನು ಸಲಹೆ ಮಾಡುತ್ತೀರಾ?\n ಈ ರೋಗನಿರ್ಣಯಕ್ಕೆ ಯಾವ ಚಿಕಿತ್ಸೆಯ ಕಾರ್ಯಕ್ರಮವು ಹೆಚ್ಚು ಸಹಾಯಕವಾಗಿದೆ?\n ಈ ಪ್ರೋಗ್ರಾಂ ಸೇವೆಗಳನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆಯೇ? ಇತರ ತಜ್ಞರಿಂದ? ಹಾಗಿದ್ದಲ್ಲಿ, ಈ ಸೇವೆಗಳನ್ನು ಸಂಘಟಿಸಲು ಯಾರು ಜವಾಬ್ದಾರರಾಗಿರುತ್ತಾರೆ?\n ಈ ಚಿಕಿತ್ಸಾ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಕುಟುಂಬದ ಪಾತ್ರ ಏನು ಎಂದು ನೀವು ನೋಡುತ್ತೀರಿ?\n ಚಿಕಿತ್ಸೆಯನ್ನು ಒದಗಿಸುವ ವ್ಯಕ್ತಿಗಳಿಗೆ ಕುಟುಂಬವು ಎಷ್ಟು ಪ್ರವೇಶವನ್ನು ಹೊಂದಿರುತ್ತದೆ?\n ಯಾವ ಔಷಧಿಗಳು ಈ ರೋಗನಿರ್ಣಯದೊಂದಿಗೆ ಸಾಮಾನ್ಯವಾಗಿ ಬಳಸಲಾಗುತ್ತದೆ?\n ಈ ಅನಾರೋಗ್ಯದ ವ್ಯಕ್ತಿಗಳಿಗೆ ಚಿಕಿತ್ಸೆ ನೀಡುವಲ್ಲಿ ನೀವು ಎಷ್ಟು ಅನುಭವವನ್ನು ಹೊಂದಿದ್ದೀರಿ?\n ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ನಿಮಗೆ ಸಹಾಯ ಮಾಡಲು ನಾನು ಏನು ಮಾಡಬಹುದು?"],
+        "context": [""]
+    },
+    {"tag": "fact-321",
+        "patterns": ["ಹೊಸ ಔಷಧಿಯನ್ನು ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು ನಾನು ಏನು ತಿಳಿದುಕೊಳ್ಳಬೇಕು?"],
+        "responses": ["ಔಷಧಿಗಳ ಬಗ್ಗೆ ಮಾಹಿತಿಯ ಉತ್ತಮ ಮೂಲವೆಂದರೆ ವೈದ್ಯರು ಅವುಗಳನ್ನು ಶಿಫಾರಸು ಮಾಡುತ್ತಾರೆ. ಅವನು ಅಥವಾ ಅವಳು ಈ ರೀತಿಯ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಲು ಶಕ್ತರಾಗಿರಬೇಕು: \n1. ಔಷಧವನ್ನು ಏನು ಮಾಡಬೇಕು? \n2. ಅದು ಯಾವಾಗ ಪರಿಣಾಮ ಬೀರಲು ಪ್ರಾರಂಭಿಸಬೇಕು ಮತ್ತು ಹೇಗೆ ಅದು ಯಾವಾಗ ಪರಿಣಾಮಕಾರಿ ಎಂದು ನನಗೆ ತಿಳಿಯುತ್ತದೆ? \n3. ಔಷಧಿಯನ್ನು ಹೇಗೆ ತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ ಮತ್ತು ಎಷ್ಟು ಸಮಯದವರೆಗೆ? ಈ ಔಷಧಿಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುವಾಗ ಯಾವ ಆಹಾರ, ಪಾನೀಯಗಳು, ಇತರ ಔಷಧಿಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಗಳನ್ನು ತಪ್ಪಿಸಬೇಕು? \n4. ಅಡ್ಡಪರಿಣಾಮಗಳು ಯಾವುವು ಮತ್ತು ಏನು ಮಾಡಬೇಕು? ಅವು ಸಂಭವಿಸಿದಲ್ಲಿ ಮಾಡಬೇಕೇ? \n5. ಒಂದು ಡೋಸ್ ತಪ್ಪಿಹೋದರೆ ನಾನು ಏನು ಮಾಡಬೇಕು? \n6. ಈ ಔಷಧಿಗಳ ಬಗ್ಗೆ ಯಾವುದೇ ಲಿಖಿತ ಮಾಹಿತಿ ಲಭ್ಯವಿದೆಯೇ? \n7. ಸೂಕ್ತವಾಗಬಹುದಾದ ಇತರ ಔಷಧಿಗಳಿವೆಯೇ? \n8. ಹಾಗಿದ್ದಲ್ಲಿ, ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಒಂದಕ್ಕೆ ನೀವು ಏಕೆ ಆದ್ಯತೆ ನೀಡುತ್ತೀರಿ? \n9. ಔಷಧಿಗಳನ್ನು ನೀವು ಹೇಗೆ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡುತ್ತೀರಿ ಮತ್ತು ಯಾವ ರೋಗಲಕ್ಷಣಗಳು ಅವುಗಳನ್ನು ಹೆಚ್ಚಿಸಬೇಕು, ಕಡಿಮೆಗೊಳಿಸಬೇಕು ಅಥವಾ ಬದಲಾಯಿಸಬೇಕು ಎಂದು ಸೂಚಿಸುತ್ತವೆ? \n10. ಎಲ್ಲಾ ಔಷಧಿಗಳನ್ನು ನಿರ್ದೇಶನದಂತೆ ತೆಗೆದುಕೊಳ್ಳಬೇಕು. ಮಾನಸಿಕ ಕಾಯಿಲೆಗಳಿಗೆ ಹೆಚ್ಚಿನ ಔಷಧಿಗಳು ಅನಿಯಮಿತವಾಗಿ ತೆಗೆದುಕೊಂಡಾಗ ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ, ಮತ್ತು ಹೆಚ್ಚುವರಿ ಪ್ರಮಾಣಗಳು ತೀವ್ರವಾದ, ಕೆಲವೊಮ್ಮೆ ಅಪಾಯಕಾರಿ ಅಡ್ಡಪರಿಣಾಮಗಳಿಗೆ ಕಾರಣವಾಗಬಹುದು. ಅನೇಕ ಮನೋವೈದ್ಯಕೀಯ ಔಷಧಿಗಳು ಹಲವಾರು ವಾರಗಳವರೆಗೆ ತೆಗೆದುಕೊಂಡ ನಂತರವೇ ಪ್ರಯೋಜನಕಾರಿ ಪರಿಣಾಮವನ್ನು ಬೀರಲು ಪ್ರಾರಂಭಿಸುತ್ತವೆ."],
+        "context": [""]
+    },
+    {"tag": "fact-331",
+        "patterns": ["ಚಿಕಿತ್ಸೆಯನ್ನು ಹುಡುಕಲು ನಾನು ಎಲ್ಲಿಗೆ ಹೋಗಬಹುದು?"],
+        "responses": ["Dಮಾನಸಿಕ ಆರೋಗ್ಯ ಸ್ಥಿತಿ ಮತ್ತು/ಅಥವಾ ರೋಗಲಕ್ಷಣಗಳ ಸ್ವರೂಪ ಮತ್ತು ಅವುಗಳನ್ನು ಹೊಂದಿರುವ ವ್ಯಕ್ತಿಯ ಆಧಾರದ ಮೇಲೆ ವಿವಿಧ ರೀತಿಯ ಚಿಕಿತ್ಸೆಯು ಹೆಚ್ಚು ಪರಿಣಾಮಕಾರಿಯಾಗಿದೆ (ಉದಾಹರಣೆಗೆ, ಮಕ್ಕಳ ಮಾನಸಿಕ ಆರೋಗ್ಯದಲ್ಲಿ ಪರಿಣತಿ ಹೊಂದಿರುವ ಚಿಕಿತ್ಸಕರಿಂದ ಮಕ್ಕಳು ಪ್ರಯೋಜನ ಪಡೆಯುತ್ತಾರೆ). ಆದಾಗ್ಯೂ, ಹಲವಾರು ರೀತಿಯ ಚಿಕಿತ್ಸೆ ಮತ್ತು ಚಿಕಿತ್ಸೆಯು ಸಹಾಯ ಮಾಡಬಹುದು."],
+        "context": [""]
+    },
+    {"tag": "fact-341",
+        "patterns": ["ನಾನು ಅಸ್ವಸ್ಥನಾಗಿದ್ದರೆ ನನಗೆ ಹೇಗೆ ತಿಳಿಯುವುದು?"],
+        "responses": ["ನಿಮ್ಮ ನಂಬಿಕೆಗಳು, ಆಲೋಚನೆಗಳು, ಭಾವನೆಗಳು ಅಥವಾ ನಡವಳಿಕೆಗಳು ಸಾಮಾನ್ಯ ಅಥವಾ ಸಾಮಾನ್ಯ ರೀತಿಯಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ನಿಮ್ಮ ಸಾಮರ್ಥ್ಯದ ಮೇಲೆ ಮಹತ್ವದ ಪ್ರಭಾವವನ್ನು ಹೊಂದಿದ್ದರೆ, ಸಹಾಯವನ್ನು ಪಡೆಯುವುದು ಮುಖ್ಯವಾಗಿರುತ್ತದೆ."],
+        "context": [""]
+    },
+    {"tag": "fact-351",
+        "patterns": ["ನಾನು ಸಾಮಾಜಿಕ ಸಂಪರ್ಕಗಳನ್ನು ಹೇಗೆ ಕಾಪಾಡಿಕೊಳ್ಳಬಹುದು? ನಾನು ಒಂಟಿತನವನ್ನು ಅನುಭವಿಸಿದರೆ ಏನು ಮಾಡಬೇಕು?"],
+        "responses": ["ಈಗ ಬಹಳಷ್ಟು ಜನರು ಒಂಟಿಯಾಗಿರುತ್ತಾರೆ, ಆದರೆ ನಾವು ಏಕಾಂಗಿಯಾಗಿರಬೇಕಾಗಿಲ್ಲ. ಇದರಲ್ಲಿ ನಾವೆಲ್ಲ ಒಟ್ಟಿಗಿದ್ದೇವೆ. ನಿಮಗೆ ಹೆಚ್ಚು ಅರ್ಥಪೂರ್ಣವಾದ ಸಂಪರ್ಕದ ವಿವಿಧ ವಿಧಾನಗಳ ಬಗ್ಗೆ ಯೋಚಿಸಿ. ಉದಾಹರಣೆಗೆ, ನೀವು ಫೋನ್ ಕರೆಯಲ್ಲಿ ವೀಡಿಯೊ ಚಾಟ್‌ಗೆ ಆದ್ಯತೆ ನೀಡಬಹುದು ಅಥವಾ ವೀಡಿಯೊ ಕರೆಗಾಗಿ ಒಂದು ಸೆಟ್ ಸಮಯದ ಬದಲಿಗೆ ದಿನವಿಡೀ ಪಠ್ಯ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಲು ನೀವು ಆದ್ಯತೆ ನೀಡಬಹುದು. ನಂತರ, ಯೋಜನೆಯನ್ನು ಮಾಡಲು ನಿಮ್ಮ ಸಾಮಾಜಿಕ ನೆಟ್ವರ್ಕ್ಗಳೊಂದಿಗೆ ಕೆಲಸ ಮಾಡಿ. ನೀವು ಸಂಜೆ ನಿಮ್ಮ ಆಪ್ತ ಸ್ನೇಹಿತರೊಂದಿಗೆ ವೀಡಿಯೊ ಚಾಟ್ ಮಾಡಬಹುದು ಮತ್ತು ವಾರಕ್ಕೊಮ್ಮೆ ಕುಟುಂಬದ ಸದಸ್ಯರಿಗೆ ಫೋನ್ ಮಾಡಬಹುದು. ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಇಲ್ಲದಿರುವ ಜನರ ಬಗ್ಗೆ ಜಾಗರೂಕರಾಗಿರಿ ಎಂಬುದನ್ನು ನೆನಪಿಡಿ. ಫೋನ್ ಮೂಲಕ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ನೀವು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು ಎಂದು ಕೇಳಿ. ನಿಮ್ಮ ಸಾಮಾಜಿಕ ಸಂಪರ್ಕಗಳ ಗುಣಮಟ್ಟ ಮುಖ್ಯವಾಗಿದೆ. ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮದ ಮೂಲಕ ಬುದ್ದಿಹೀನವಾಗಿ ಸ್ಕ್ರೋಲಿಂಗ್ ಮಾಡುವುದು ಮತ್ತು ಕೆಲವು ಪೋಸ್ಟ್‌ಗಳನ್ನು ಇಷ್ಟಪಡುವುದು ಸಾಮಾನ್ಯವಾಗಿ ಬಲವಾದ ಸಾಮಾಜಿಕ ಸಂಪರ್ಕಗಳನ್ನು ನಿರ್ಮಿಸುವುದಿಲ್ಲ. ನೀವು ನಿಜವಾಗಿಯೂ ಒಳಗೊಂಡಿರುವ ಮತ್ತು ಸಂಪರ್ಕಿತವಾಗಿರುವ ಭಾವನೆಯನ್ನು ಉಂಟುಮಾಡುವ ತಂತ್ರಗಳ ಮೇಲೆ ನೀವು ಗಮನಹರಿಸಿದ್ದೀರಿ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. ನಿಮ್ಮ ಪ್ರಸ್ತುತ ಕಾರ್ಯತಂತ್ರಗಳು ನಿಮಗೆ ಸಂಪರ್ಕದಲ್ಲಿರಲು ಸಹಾಯ ಮಾಡದಿದ್ದರೆ, ನೀವು ಪರಿಹಾರವನ್ನು ಕಂಡುಕೊಳ್ಳಬಹುದೇ ಎಂದು ನೋಡಲು ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಿ. ಪ್ರತಿಯೊಬ್ಬರೂ ಕೆಲವೊಮ್ಮೆ ಒಂಟಿತನವನ್ನು ಅನುಭವಿಸುತ್ತಾರೆ. ಬಹುಶಃ ನೀವು ಇತ್ತೀಚೆಗೆ ಹೊಸ ನಗರಕ್ಕೆ ತೆರಳಿದ್ದೀರಿ, ನಿಮ್ಮ ಸ್ನೇಹಿತರ ವಲಯವನ್ನು ಬದಲಾಯಿಸುತ್ತಿದ್ದೀರಿ, ನಿಮ್ಮ ಜೀವನದಲ್ಲಿ ಪ್ರಮುಖ ವ್ಯಕ್ತಿಯನ್ನು ಕಳೆದುಕೊಂಡಿರಬಹುದು ಅಥವಾ ನಿಮ್ಮ ಕೆಲಸವನ್ನು ಕಳೆದುಕೊಂಡಿರಬಹುದು ಮತ್ತು ಸಹೋದ್ಯೋಗಿಗಳೊಂದಿಗೆ ಪ್ರಮುಖ ಸಾಮಾಜಿಕ ಸಂಪರ್ಕಗಳನ್ನು ಕಳೆದುಕೊಂಡಿರಬಹುದು. ಇತರ ಜನರು ಇತರರೊಂದಿಗೆ ದೈಹಿಕ ಸಂಪರ್ಕಗಳನ್ನು ಹೊಂದಿರಬಹುದು ಆದರೆ ಅವರ ಭಾವನಾತ್ಮಕ ಅಥವಾ ಸಾಮಾಜಿಕ ಅಗತ್ಯಗಳನ್ನು ಪೂರೈಸಲಾಗಿಲ್ಲ ಎಂದು ಭಾವಿಸಬಹುದು. ಸಾಮಾಜಿಕ ಅಂತರ ಅಥವಾ ಸ್ವಯಂ-ಪ್ರತ್ಯೇಕತೆಯಂತಹ ಕ್ರಮಗಳು ಒಂಟಿತನವನ್ನು ಇನ್ನಷ್ಟು ಹದಗೆಡಿಸಬಹುದು. ನೀವು ಹೊಂದಿರುವ ಸಂಪರ್ಕಗಳನ್ನು ತಲುಪಿ. ಸಂಪರ್ಕದಲ್ಲಿರಲು ಮಾರ್ಗಗಳನ್ನು ಸೂಚಿಸಿ ಮತ್ತು ಸಂಪರ್ಕಿಸಲು ನೀವು ನಿಯಮಿತ ಸಮಯವನ್ನು ಹೊಂದಿಸಬಹುದೇ ಎಂದು ನೋಡಿ. ಜನರು ವಿವಿಧ ಕಾರಣಗಳಿಗಾಗಿ ತಲುಪಲು ಹಿಂಜರಿಯಬಹುದು, ಆದ್ದರಿಂದ ಕೇಳುವವರಾಗಿರಲು ಹಿಂಜರಿಯದಿರಿ. ಸಾಮಾಜಿಕ ಮಾಧ್ಯಮದಲ್ಲಿ ಸ್ಥಳೀಯ ಸಮುದಾಯ ಬೆಂಬಲ ಗುಂಪುಗಳು ಮತ್ತು ಪರಸ್ಪರ ಸಹಾಯ ಗುಂಪುಗಳನ್ನು ನೋಡಿ. ಈ ಸಾಂಕ್ರಾಮಿಕವು ಎಲ್ಲರನ್ನು ಒಟ್ಟಿಗೆ ತರುತ್ತಿದೆ, ಆದ್ದರಿಂದ ಹೊಸ ಸಂಪರ್ಕಗಳನ್ನು ಮಾಡಲು ಅವಕಾಶಗಳಿಗಾಗಿ ನೋಡಿ. ಈ ಗುಂಪುಗಳು ನಿಮ್ಮ ಕೌಶಲ್ಯ ಮತ್ತು ಸಾಮರ್ಥ್ಯಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಅಥವಾ ಸಹಾಯ ಮತ್ತು ಬೆಂಬಲವನ್ನು ಪಡೆಯಲು ಉತ್ತಮ ಮಾರ್ಗವಾಗಿದೆ. ವಿಶೇಷ ಬೆಂಬಲ ಗುಂಪುಗಳಿಗಾಗಿ ನೋಡಿ. ಬೆಂಬಲ ಗುಂಪುಗಳು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಚಲಿಸುತ್ತಿವೆ ಮತ್ತು ನೀವು ಯಾರೊಂದಿಗಾದರೂ ಮಾತನಾಡಬೇಕಾದರೆ ಕರೆ ಮಾಡಲು ಹಲವಾರು ವಿಭಿನ್ನ ಬೆಂಬಲ ಸಾಲುಗಳಿವೆ."],
+        "context": [""]
+    },
+    {"tag": "fact-361",
+    "patterns": ["ಮೈಸೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ","ಮೈಸೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸಹಾಯಕ್ಕಾಗಿ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ.","ಮೈಸೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಬೆಂಬಲಕ್ಕಾಗಿ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ."],
+    "responses": ["ಸಹಾಯವಾಣಿ:8710994553"],
+    "context": [""]
+    },
+    {"tag": "fact-371",
+    "patterns": ["ಬೆಂಗಳೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ","ಬೆಂಗಳೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸಹಾಯಕ್ಕಾಗಿ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ.","ಬೆಂಗಳೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಬೆಂಬಲಕ್ಕಾಗಿ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ."],
+    "responses": ["ಸಹಾಯವಾಣಿ:080-26995000"],
+    "context": [""]
+    },
+    {"tag": "fact-381",
+    "patterns": ["ಮಂಗಳೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಅಸ್ವಸ್ಥತೆಯ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ","ಮಂಗಳೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸಹಾಯಕ್ಕಾಗಿ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ.","ಮಂಗಳೂರಿನಲ್ಲಿ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಬೆಂಬಲಕ್ಕಾಗಿ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆ."],
+    "responses": ["ಸಹಾಯವಾಣಿ:7942781120"],
+    "context": [""]
+    }
+    ]
+}
